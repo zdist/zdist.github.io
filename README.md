@@ -1,2 +1,2 @@
-# zdisanto.github.io
-Personal Website V4 (2022)
+# Personal Website V4
+Created Fall 2022
