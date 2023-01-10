@@ -109,7 +109,7 @@ span > .blink {
     display: grid;
     grid-template-areas: 
         'header header header header header header' 
-        'left left middle middle right right' 
+        /* 'left left middle middle right right'  */
         'footer footer footer footer footer footer';
     grid-column-gap: 10px; 
     grid-row-gap: 10px; 
@@ -162,27 +162,6 @@ span > .blink {
     text-align: center;
     border-radius: 10px;
 }
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 700px) {
-    #about, #experience {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    li a {
-        font-size: 15px;
-        display: inline-block;
-        padding: 0px 0px;
-        text-decoration: none;
-    }
-    .container  {
-        grid-template-areas: 
-            'header header header header header header' 
-            'left left left left left left' 
-            'middle middle middle middle middle middle' 
-            'right right right right right right' 
-            'footer footer footer footer footer footer';
-    }
-}
 /* Website Portion End */
 
 /* Contact Form Start */
@@ -226,8 +205,23 @@ button:active {
 /* Contact Form End */
 
 /* Cards Start */
-#card1, #card2, #card3, #card4, #card5 {
+.card1, .card2, .card3, .card4, .card5 {
     border-radius: 10px;
+}
+.card1 {
+    grid-area: flColumn;
+}
+.card2 {
+    grid-area: lColumn;
+}
+.card3 {
+    grid-area: cColumn;
+}
+.card4 {
+    grid-area: rColumn;
+}
+.card5 {
+    grid-area: frColumn;
 }
 .container {
     max-width: 800px;
@@ -290,11 +284,30 @@ button:active {
     transition-duration: 0.4s;
 }
 /* Cards End */
-@media only screen and (max-width: 870px) {
-    /* .container {
-        max-width: 400px;
-    } */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 870px) {
+    #about, #experience {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    li a {
+        font-size: 15px;
+        display: inline-block;
+        padding: 0px 0px;
+        text-decoration: none;
+    }
     .cards {
         max-width: 30%;
+    }
+    .container  {
+        grid-template-areas: 
+            'header header header header header header' 
+            'flColumn flColumn flColumn flColumn flColumn flColumn' 
+            'lColumn lColumn lColumn lColumn lColumn lColumn' 
+            'cColumn cColumn cColumn cColumn cColumn cColumn'
+            'rColumn rColumn rColumn rColumn rColumn rColumn' 
+            'frColumn frColumn frColumn frColumn frColumn frColumn' 
+            'footer footer footer footer footer footer';
     }
 }
