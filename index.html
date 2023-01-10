@@ -76,35 +76,35 @@
             <p style="text-align: center;">Below are a handful of my most recent projects...</p>
             <!-- Card Shuffle: https://www.youtube.com/watch?v=Ru7SeyI8E4Y&t=193s -->
             <div class="container">
-                <div class="cards" id="card1">
+                <div class="cards" class="card1">
                     <!-- <div class="cards_inner"></div> -->
                     <img src="vrTour2.png" alt="Virtual Reality Tour" style="width:100%; border-radius:10px">
                     <h4>Virtual Reality Tour</h4>
                     <p class="subtext">October 2021 - Present</p>
                     <p>A VR Tour of Pace University's Pleasantville campus, using Unity.</p>
                 </div>
-                <div class="cards" id="card2">
+                <div class="cards" class="card2">
                     <!-- <div class="cards_inner"></div> -->
                     <img src="icons2.png" alt="Icons" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="icons.png">Icons for SCL</a></h4>
                     <p class="subtext">September 4th-28th 2022</p>
                     <p>Icons I created to decorate Seidenberg Creative Lab's (SCL) website using Figma.</p>
                 </div>
-                <div class="cards" id="card3">
+                <div class="cards" class="card3">
                     <!-- <div class="cards_inner"></div> -->
                     <img src="greenTakeout2.png" alt="Green Takeout Wireframe" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="https://www.figma.com/proto/XbrbEkR5eDX5Ioq4Yn8sOB/GreenTakeout?node-id=47%3A235&scaling=scale-down&page-id=0%3A1&starting-point-node-id=47%3A235">Green Takeout</a></h4>
                     <p class="subtext">August 15th-18th 2022</p>
                     <p>An interactive wireframe for a concept delivery company application using Figma.</p>
                 </div>
-                <div class="cards" id="card4">
+                <div class="cards" class="card4">
                     <!-- <div class="cards_inner"></div> -->
                     <img src="welfare2careers2.png" alt="Welfare to Careers Website" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="http://www.welfaretocareersproject.org/">Welfare to Careers Project</a></h4>
                     <p class="subtext">January 2022 - Present</p>
                     <p>A redesign of an old website to a more modern and sleek design using WordPress.</p>
                 </div>
-                <div class="cards" id="card5">
+                <div class="cards" class="card5">
                     <!-- <div class="cards_inner"></div> -->
                     <img src="pic1.png" alt="Device Motion" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="https://zdisanto.github.io/DeviceMotion/">Device Motion</a></h4>
@@ -148,13 +148,16 @@
             <h2 style="text-align: center;">#contact</h2>
             <p>I don't have social media but you can find me elsewhere on the internet...</p>
             <div>
+                <a class="links fa fa-envelope" target="_blank" rel="nofollow noopener" href="mailto:zodisanto14@gmail.com"> Email</a>
                 <a class="links fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/zdisanto/"> LinkedIn</a>
                 <a class="links fa fa-github" target="_blank" href="https://github.com/zdisanto"> GitHub</a>
                 <a class="links fa fa-spotify" target="_blank" href="https://open.spotify.com/user/zoriixx?si=3c289f2cfcf045b2"> Spotify</a>
                 <a class="links fa fa-book" target="_blank" href="https://www.goodreads.com/user/show/160126636-zo"> GoodReads</a>
             </div>
 
-            <p>Or you can<a class="links fa" target="_blank" rel="nofollow noopener" href="mailto:zodisanto14@gmail.com">email</a>me!</p>
+
+            <!-- <p>Or you can -->
+                <!-- <a class="links fa" target="_blank" rel="nofollow noopener" href="mailto:zodisanto14@gmail.com">email</a>me!</p> -->
             <!-- <p>Or you can email me here:</p>
             <div id="form" action="send-email.php">
                 <form method="post">
@@ -184,6 +187,10 @@
         <div id="footer">
             <p>© 2022 • Zo DiSanto</p>
         </div>
-        <script src="projectCards.js"></script>
+        <script>
+            if(screen.width >= 720) {
+                document.head.appendChild(document.createElement('script')).src = 'projectCards.js';
+            }
+        </script>
     </body>
 </html>
