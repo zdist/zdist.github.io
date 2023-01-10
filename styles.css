@@ -247,6 +247,7 @@ button:active {
     margin: auto;
     transition: all 400ms ease;
     padding: 10px;
+    cursor: pointer;
 }
 .cards:hover:not(.active).farLeft {
     transform: translateX(-100%) rotate(-10deg) scale(0.7);
