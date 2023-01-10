@@ -285,6 +285,10 @@ button:active {
     z-index: 5;
     position: relative;
 }
+.cards.cards.active:hover {
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.4s;
+}
 /* Cards End */
 @media only screen and (max-width: 870px) {
     /* .container {
