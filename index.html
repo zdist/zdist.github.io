@@ -9,20 +9,37 @@
         <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/70993217?s=400&amp;u=c252d82e2c57cd011fcbf8a6a89729fcbc9d9026&amp;v=4">
         <!-- Fa Fa-stuff: -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- My Stylesheet -->
         <link rel="stylesheet" href="styles.css">
+        <!-- w3schools Stuff (used for Navbar) -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-        <!-- <h1>Zo DiSanto</h1>
-        <summary>Your friendly neighborhood Web Developer</summary> -->
-        <ul>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-wide w3-padding ">
+            <a href="#home" class="w3-bar-item w3-button"><b>Zo DiSanto</b></a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#experience" class="w3-bar-item w3-button">Experience</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+            </div>
+        </div>
+
+        <!-- <ul>
             <li><b>Zo DiSanto</b></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-
+        </ul> -->
+         
+        <br><br>
         <hr>
+        <br><br>
 
         <div class="header">
             <h2>Zo DiSanto</h2>
@@ -30,6 +47,7 @@
         </div>
 
         <div id="about">
+            <br><br>
             <h2 style="text-align: center;">#about</h2>
             <div class="life"> 
                 <span>Jan 1999</span>
@@ -41,11 +59,11 @@
             </div>
             <div class="life"> 
                 <span>May 2021</span>
-                <blockquote>Obtained a Bachelor's degree in Information Science and a minor in Psychology at the State University of New York (SUNY) College at Oswego.</blockquote>
+                <blockquote>Obtained a bachelor's degree in Information Science and a minor in Psychology at the State University of New York (SUNY) College at Oswego.</blockquote>
             </div>
             <div class="life"> 
                 <span>May 2023 <i class="blink">&laquo;</i></span>
-                <blockquote>Will complete the Master's program at Pace University studying Computer Science.</blockquote>
+                <blockquote>Completing the master's program at Pace University studying Computer Science.</blockquote>
             </div>
         </div>
 
@@ -69,55 +87,96 @@
             </p>
         </div> -->
 
+        <br>
         <hr>
-        
+
         <div id="projects">
+            <br><br>
             <h2 style="text-align: center;">#projects</h2>
             <p style="text-align: center;">Below are a handful of my most recent projects...</p>
-            <!-- Card Shuffle: https://www.youtube.com/watch?v=Ru7SeyI8E4Y&t=193s -->
+
             <div class="container">
+                <div class="lColum">
+                    <img class="img" src="vrTour2.png" alt="An Image of a Virtual Reality Tour of Pace University’s Pleasantville Campus.">
+                    <p><b>VR Tour</b></p>
+                    <p class="subtext">October 2021 - Present</p>
+                    <blockquote>A Virtual Reality Tour of Pace University's Pleasantville campus, using Unity.</blockquote>
+                </div>
+                <div class="mColum">
+                    <img class="img" src="welfare2careers2.png" alt="An Image of the website 'Welfare to Careers Project'.">
+                    <p class="title"><a target="_blank" href="http://www.welfaretocareersproject.org">Welfare to Careers Project</a></p>
+                    <p class="subtext">January 2022 - Present</p>
+                    <blockquote>A redesign of an old website to a more modern and sleek design using WordPress.</blockquote>
+                </div>  
+                <div class="rColum">
+                    <img class="img" src="pic1.png" alt="Device Motion project.">
+                    <p class="title"><a target="_blank" href="https://zdisanto.github.io/DeviceMotion/">Device Motion</a></p>
+                    <p class="subtext">October 15th-19th 2022</p>
+                    <blockquote>Op Art by Bridget Riley comes to life on mobile devices with Device Motion.</blockquote>
+                </div> 
+            </div>
+            <div class="container">
+                <div class="lColum">
+                    <img class="img" src="icons2.png" alt="An Image of a icons I created for the SCL website.">
+                    <p class="title"><a target="_blank" href="icons.png">Icons</a></p>
+                    <p class="subtext">September 4th-28th 2022</p>
+                    <blockquote>Icons I created to decorate Seidenberg Creative Lab's (SCL) website using Figma.</blockquote>
+                </div>
+                <div class="mColum">
+                    <img class="img" src="greenTakeout2.png" alt="A wireframe for 'Green Takeout'.">
+                    <p class="title"><a target="_blank" href="https://www.figma.com/proto/XbrbEkR5eDX5Ioq4Yn8sOB/GreenTakeout?node-id=47%3A235&scaling=scale-down&page-id=0%3A1&starting-point-node-id=47%3A235">Green Takeout</a></p>
+                    <p class="subtext">August 15th-18th 2022</p>
+                    <blockquote>An interactive wireframe for a delivery application concept using Figma.</blockquote>
+                </div>  
+                <div class="rColum">
+                    <img class="img" src="memberManagement.png" alt="A wireframe of the Members Management view on the SCL website.">
+                    <p class="title"><a target="_blank" href="SCL_Website_Wireframe.pdf">Members Management System</a></p>
+                    <p class="subtext">October 24th-29th 2021</p>
+                    <blockquote>An wireframe I developed for the Members Management System on the SCL website.</blockquote>
+                </div> 
+            </div>
+
+            <!-- Card Shuffle: https://www.youtube.com/watch?v=Ru7SeyI8E4Y&t=193s -->
+            <!-- <div class="container">
                 <div class="cards" class="card1">
-                    <!-- <div class="cards_inner"></div> -->
                     <img src="vrTour2.png" alt="Virtual Reality Tour" style="width:100%; border-radius:10px">
                     <h4>Virtual Reality Tour</h4>
                     <p class="subtext">October 2021 - Present</p>
                     <p>A VR Tour of Pace University's Pleasantville campus, using Unity.</p>
                 </div>
                 <div class="cards" class="card2">
-                    <!-- <div class="cards_inner"></div> -->
                     <img src="icons2.png" alt="Icons" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="icons.png">Icons for SCL</a></h4>
                     <p class="subtext">September 4th-28th 2022</p>
                     <p>Icons I created to decorate Seidenberg Creative Lab's (SCL) website using Figma.</p>
                 </div>
                 <div class="cards" class="card3">
-                    <!-- <div class="cards_inner"></div> -->
                     <img src="greenTakeout2.png" alt="Green Takeout Wireframe" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="https://www.figma.com/proto/XbrbEkR5eDX5Ioq4Yn8sOB/GreenTakeout?node-id=47%3A235&scaling=scale-down&page-id=0%3A1&starting-point-node-id=47%3A235">Green Takeout</a></h4>
                     <p class="subtext">August 15th-18th 2022</p>
                     <p>An interactive wireframe for a concept delivery company application using Figma.</p>
                 </div>
                 <div class="cards" class="card4">
-                    <!-- <div class="cards_inner"></div> -->
                     <img src="welfare2careers2.png" alt="Welfare to Careers Website" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="http://www.welfaretocareersproject.org/">Welfare to Careers Project</a></h4>
                     <p class="subtext">January 2022 - Present</p>
                     <p>A redesign of an old website to a more modern and sleek design using WordPress.</p>
                 </div>
                 <div class="cards" class="card5">
-                    <!-- <div class="cards_inner"></div> -->
                     <img src="pic1.png" alt="Device Motion" style="width:100%; border-radius:10px">
                     <h4><a target="_blank" href="https://zdisanto.github.io/DeviceMotion/">Device Motion</a></h4>
                     <p class="subtext">October 15th-19th 2022</p>
                     <p>Op Art by Bridget Riley comes to life on mobile devices with Device Motion.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <br>
         <hr>
+        <br>
 
         <div id="experience">
+            <br><br>
             <h2 style="text-align: center;">#experience</h2>
 
             <span>Seidenberg Creative Labs (SCL) - New York, NY</span>
@@ -142,7 +201,9 @@
             <blockquote>&#x2022; Programming Through Mobile App Development ~ Spring 2020</blockquote>
         </div>
 
+        <br>
         <hr>
+        <br>
 
         <div id="contact">
             <h2 style="text-align: center;">#contact</h2>
@@ -187,10 +248,8 @@
         <div id="footer">
             <p>© 2022 • Zo DiSanto</p>
         </div>
-        <script>
-            if(screen.width >= 720) {
-                document.head.appendChild(document.createElement('script')).src = 'projectCards.js';
-            }
-        </script>
+        <!-- Not used:
+            <script src="projectCards.js"></script> 
+        -->
     </body>
 </html>

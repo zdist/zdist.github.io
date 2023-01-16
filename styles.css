@@ -2,20 +2,21 @@
 * {
     box-sizing: border-box;
 }
-html {
+/* html {
     background-color: black;
-}
+} */
 body {
-    font-family:'Courier New', Courier, monospace;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace !important;
+    background-color: white !important;
+    padding: 10px !important;
+    /* border-radius: 10px !important; */
 }
 /* A is for the way you ... */
 a {
     color: black;
 }
 a:hover {
+    background-color: rgba(255, 255, 255, 0) !important;
     text-decoration: underline;
 }
 /* Nav Bar > Marz Barz  (w/ dropdown menu) */
@@ -35,12 +36,13 @@ li a {
     text-decoration: none;
 }
 hr {
-    border: 2px solid black;
-    margin: 2px 0;
-    clear: right;
-    border-radius: 2px;
+    border: 2px solid black !important;
+    margin: 2px 0 !important;
+    clear: right !important;
+    border-radius: 2px !important;
 }
 #about, #bio, #experience {
+    font-family: 'Courier New', Courier, monospace !important;
     padding-left: 200px; 
     padding-right: 200px; 
 }
@@ -96,6 +98,11 @@ span > .blink {
     */
     border-radius: 10px;
 }
+h2 {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-weight: 400;
+    margin: 10px 0;
+}
 .header > h2 {
     font-size: 35px;
 }
@@ -104,12 +111,13 @@ span > .blink {
     font-style: italic;
     opacity: 0.55;
 }
+
 /* The grid container */
 .container {
     display: grid;
     grid-template-areas: 
         'header header header header header header' 
-        /* 'left left middle middle right right'  */
+        'left left middle middle right right' 
         'footer footer footer footer footer footer';
     grid-column-gap: 10px; 
     grid-row-gap: 10px; 
@@ -125,7 +133,6 @@ span > .blink {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     transition-duration: 0.4s;
 }
-
 /* Style the left column */
 .lColum {
     grid-area: left;
@@ -155,6 +162,11 @@ span > .blink {
 .title:hover {
     text-decoration: underline;
 }
+.subtext {
+    font-size: small;
+}
+/* End of grid container */
+
 /* Style the footer */
 #footer {
     grid-area: footer;
@@ -165,7 +177,7 @@ span > .blink {
 /* Website Portion End */
 
 /* Contact Form Start */
-#form {
+/* #form {
     margin-left: 20%;
     margin-right: 20%;
     padding: 10px;
@@ -173,7 +185,6 @@ span > .blink {
     border-radius: 10px;   
 }
 lable#tab {
-    /* text-align: left !important; */
     text-indent: -3.4em ;
 }
 input, textarea, button {
@@ -201,11 +212,11 @@ button:active {
     input, textarea, button {
         width: 90%;    
     }
-}
+} */
 /* Contact Form End */
 
 /* Cards Start */
-.card1, .card2, .card3, .card4, .card5 {
+/* .card1, .card2, .card3, .card4, .card5 {
     border-radius: 10px;
 }
 .card1 {
@@ -282,11 +293,32 @@ button:active {
 .cards.cards.active:hover {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
     transition-duration: 0.4s;
-}
+} */
 /* Cards End */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 870px) {
+@media (max-width: 700px) {
+    #about, #experience {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    li a {
+        font-size: 15px;
+        display: inline-block;
+        padding: 0px 0px;
+        text-decoration: none;
+    }
+    .container  {
+        grid-template-areas: 
+            'header header header header header header' 
+            'left left left left left left' 
+            'middle middle middle middle middle middle' 
+            'right right right right right right' 
+            'footer footer footer footer footer footer';
+    }
+}
+
+/* @media (max-width: 870px) {
     #about, #experience {
         padding-right: 50px;
         padding-left: 50px;
@@ -310,4 +342,4 @@ button:active {
             'frColumn frColumn frColumn frColumn frColumn frColumn' 
             'footer footer footer footer footer footer';
     }
-}
+} */
