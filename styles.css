@@ -11,6 +11,7 @@ body {
     padding: 10px !important;
     /* border-radius: 10px !important; */
 }
+
 /* A is for the way you ... */
 a {
     color: black;
@@ -40,6 +41,10 @@ hr {
     margin: 2px 0 !important;
     clear: right !important;
     border-radius: 2px !important;
+}
+.w3-button:hover {
+    border-radius: 6px !important;
+    background-color: rgba(43, 196, 37, 0.986) !important;
 }
 #about, #bio, #experience {
     font-family: 'Courier New', Courier, monospace !important;
@@ -86,6 +91,9 @@ span > .blink {
 .links:active {
     background-color: black;
     color: white;
+}
+.linx {
+    font-family: 'Courier New', Courier, monospace !important;
 }
 /* Stop! Header Time! */
 .header {
