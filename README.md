@@ -1,5 +1,6 @@
 # Personal Website V4
-Created Fall 2022
+My little corner of the internet / digital portfolio
+###### Created Fall 2022
 <!--
 # 404: Page Under Construction
 
