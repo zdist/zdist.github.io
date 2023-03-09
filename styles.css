@@ -15,7 +15,7 @@ a {
 }
 a:hover {
     background-color: rgba(255, 255, 255, 0) !important;
-    text-decoration: underline;
+    text-decoration: none;
 }
 /* Nav Bar > Marz Barz  (w/ dropdown menu) */
 ul {
@@ -30,7 +30,7 @@ li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 hr {
     border: 2px solid black !important;
