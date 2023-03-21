@@ -160,6 +160,19 @@ p, blockquote {
     margin-right: auto;
     width: 300px;
     border-radius: 10px;
+    /* Black n White Filter */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+}
+/* Change to color on hover */
+.img:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
 }
 .subtext {
     font-size: small;
