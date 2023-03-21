@@ -173,6 +173,7 @@ p, blockquote {
     -moz-filter: none;
     -ms-filter: none;
     filter: none;
+    transition-duration: 0.4s;
 }
 .subtext {
     font-size: small;
