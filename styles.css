@@ -39,6 +39,9 @@ hr {
     clear: right !important;
     border-radius: 2px !important;
 }
+.w3-bar-item > p:hover {
+    background-color: transparent;
+}
 .w3-top {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
