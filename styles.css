@@ -169,7 +169,7 @@ p, blockquote {
     filter: gray; /* IE 6-9 */
 }
 /* Change to color on hover */
-.lColum:hover, .mColum:hover, .rColum:hover {
+.img:hover {
     -webkit-filter: none;
     -moz-filter: none;
     -ms-filter: none;
