@@ -141,11 +141,6 @@ p, blockquote {
     /* Shadow */
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
     transition-duration: 0.4s;
-    
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    filter: none;
 }
 /* Style the left column */
 .lColum {
@@ -174,13 +169,13 @@ p, blockquote {
     filter: gray; /* IE 6-9 */
 }
 /* Change to color on hover */
-/*.img:hover {
+.lColum:hover, .mColum:hover, .rColum:hover {
     -webkit-filter: none;
     -moz-filter: none;
     -ms-filter: none;
     filter: none;
     transition-duration: 0.4s;
-}*/
+}
 .subtext {
     font-size: small;
 }
