@@ -142,7 +142,7 @@ p, blockquote {
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray; /* IE 6-9 */
-    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
 }
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
@@ -153,7 +153,6 @@ p, blockquote {
     -moz-filter: none;
     -ms-filter: none;
     filter: none;
-    transition-duration: 0.4s;
 }
 /* Style the left column */
 .lColum {
