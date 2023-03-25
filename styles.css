@@ -78,7 +78,7 @@ span > .blink {
 #contact {
     text-align: center;
 }
-/* Links */
+/* Links Start */
 .links {
     font-size: 15px;
     font-weight: bold;
@@ -101,6 +101,8 @@ span > .blink {
 .linx {
     font-family: 'Space Mono', monospace !important;
 }
+/* Links End */
+
 /* Stop! Header Time! */
 .header {
     font-family: 'Space Grotesk', sans-serif;
@@ -212,5 +214,17 @@ p, blockquote {
             'middle middle middle middle middle middle' 
             'right right right right right right' 
             'footer footer footer footer footer footer';
+    }
+    .lColum, .mColum, .rColum { 
+        /* In mobile view - no transition */
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        filter: none;
+    }
+    .lColum:hover, .mColum:hover, .rColum:hover {
+        /* Shadow */
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+        transition-duration: 0.4s;
     }
 }
