@@ -79,6 +79,9 @@ span > .blink {
     text-align: center;
 }
 /* Links Start */
+.links, .linx {
+    text-align: center;
+}
 .links {
     font-size: 15px;
     font-weight: bold;
@@ -90,17 +93,14 @@ span > .blink {
 }
 .links:hover {
     text-decoration: none;
-    text-align: center;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
     transition-duration: 0.4s;
 }
 .links:active {
     background-color: black;
-    /* color: white; */
 }
 .linx {
     font-family: 'Space Mono', monospace !important;
-    text-align: center;
 }
 /* Links End */
 
