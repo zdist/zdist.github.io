@@ -1,5 +1,5 @@
 <!-- INFORMATION BELOW REDACTED FOR PRIVACY REASONS -->
-
+ 
 <!-- Code assistance from: https://www.youtube.com/watch?v=fIYyemqKR58 -->
 $name = $_POST["name"];
 $email = $_POST["email"];
