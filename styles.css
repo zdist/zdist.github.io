@@ -218,10 +218,10 @@ p, blockquote {
     }
     .lColum, .mColum, .rColum { 
         /* In mobile view - no transition */
-        -webkit-filter: none;
-        -moz-filter: none;
-        -ms-filter: none;
-        filter: none;
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        filter: grayscale(0%);
     }
     .lColum:hover, .mColum:hover, .rColum:hover {
         /* Shadow */
