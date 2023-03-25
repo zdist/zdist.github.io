@@ -43,6 +43,9 @@ hr {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
 }
+.w3-top:hover {
+    background-color: #ccc !important;
+}
 .w3-button:hover {
     border-radius: 6px !important;
     background-color: #ccc !important;
