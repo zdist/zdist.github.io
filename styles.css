@@ -96,7 +96,7 @@ span > .blink {
 }
 .links:active {
     background-color: black;
-    color: white;
+    /* color: white; */
 }
 .linx {
     font-family: 'Space Mono', monospace !important;
