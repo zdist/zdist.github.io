@@ -135,11 +135,23 @@ p, blockquote {
 .lColum, .mColum, .rColum {
     padding: 10px;
     border: 2px solid black; 
-    border-radius: 10px;      
+    border-radius: 10px;    
+    /* Black n White Filter */
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
 }
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.4s;
+    /* Change to color on hover */
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
     transition-duration: 0.4s;
 }
 /* Style the left column */
@@ -161,20 +173,6 @@ p, blockquote {
     margin-right: auto;
     width: 300px;
     border-radius: 10px;
-    /* Black n White Filter */
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray; /* IE 6-9 */
-}
-/* Change to color on hover */
-.img:hover {
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    filter: none;
-    transition-duration: 0.4s;
 }
 .subtext {
     font-size: small;
