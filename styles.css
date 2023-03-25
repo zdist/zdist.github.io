@@ -147,12 +147,13 @@ p, blockquote {
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    transition-duration: 0.4s ease-in-out;
+    /* transition-duration: 0.4s; */
     /* Change to color on hover */
     -webkit-filter: none;
     -moz-filter: none;
     -ms-filter: none;
     filter: none;
+    transition: 0.4s;
 }
 /* Style the left column */
 .lColum {
