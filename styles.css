@@ -139,13 +139,13 @@ p, blockquote {
 .undline:hover {
     text-decoration: underline;
 }
-.center {
+.center, .fakeButton {
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* width: 50%; */
 }
-.fakeButton {
+.fakeButton, .fakeButton:hover {
     color: white;
     background-color: black;
     margin-right: 20px;
