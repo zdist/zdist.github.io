@@ -145,7 +145,7 @@ p, blockquote {
     margin-right: auto;
     /* width: 50%; */
 }
-button {
+.fakeButton {
     color: white;
     background-color: black;
 }
