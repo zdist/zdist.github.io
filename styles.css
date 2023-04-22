@@ -148,6 +148,7 @@ p, blockquote {
 .fakeButton {
     color: white;
     background-color: black;
+    margin-right: 20px;
 }
 .lColum, .mColum, .rColum {
     /* display: grid;
