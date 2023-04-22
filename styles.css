@@ -149,6 +149,10 @@ p, blockquote {
     color: white;
     background-color: black;
     margin-right: 20px;
+    cursor: pointer;
+}
+button:disabled {
+    cursor: not-allowed;
 }
 .lColum, .mColum, .rColum {
     /* display: grid;
