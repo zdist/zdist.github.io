@@ -101,6 +101,7 @@ span > .blink {
 }
 .linx {
     font-family: 'Space Mono', monospace !important;
+    text-align: center;
 }
 /* Links End */
 
