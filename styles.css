@@ -1,4 +1,8 @@
 :root {
+    /*  Fonts */
+    --SpaceGrotesk: 'Space Grotesk', sans-serif;
+    --SpaceMono: 'Space Mono', monospace;
+    /*  Colors */
     --white: #ffffff;
     --black: #000000;
 }
@@ -8,7 +12,7 @@
     /* background-color: white; */
 } 
 body {
-    font-family: 'Space Mono', monospace;
+    font-family: var(--SpaceMono);
     background-color: var(--white);
     padding: 10px !important;
 }
@@ -44,14 +48,15 @@ hr {
     border-radius: 2px !important;
 }
 .w3-top {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--SpaceGrotesk);
     font-weight: 400;
 }
 .w3-top:hover {
-    text-decoration: underline;
+    background-color: var(--white);
+    text-decoration: underline !important;
 }
 .w3-button:hover {
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 #about, #bio, #experience {
     padding-left: 200px; 
@@ -63,7 +68,7 @@ hr {
     word-wrap: break-word;
 }
 span {
-    font-family: 'Space Grotesk', sans-serif !important;
+    font-family: var(--SpaceGrotesk) !important;
     font-weight: 400;
     font-size: 18px;
     margin-right: 1em;
@@ -102,14 +107,14 @@ span > .blink {
     background-color: var(--black);
 }
 .linx {
-    font-family: 'Space Mono', monospace !important;
+    font-family: var(--SpaceMono) !important;
     text-align: center;
 }
 /* == Links End == */
 
 /* Stop! Header Time! */
 .header {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--SpaceGrotesk);
     grid-area: header;
     padding: 30px;
     text-align: center;
@@ -119,13 +124,13 @@ span > .blink {
     font-size: 35px;
 }
 .header > p { /* 'Your friendly neighborhood Web Developer' */
-    font-family: 'Space Mono', monospace !important;
+    font-family: var(--SpaceMono) !important;
     font-size: 25px;
     font-style: italic;
     opacity: 0.55;
 }
 p, blockquote {
-    font-family: 'Space Mono', monospace !important;
+    font-family: var(--SpaceMono) !important;
     font-size: 16px;
 }
 
