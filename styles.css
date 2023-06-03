@@ -48,11 +48,10 @@ hr {
     font-weight: 400;
 }
 .w3-top:hover {
-    background-color: #ccc;
+    text-decoration: underline;
 }
 .w3-button:hover {
-    border-radius: 6px !important;
-    background-color: #ccc;
+    text-decoration: underline;
 }
 #about, #bio, #experience {
     padding-left: 200px; 
@@ -88,9 +87,8 @@ span > .blink {
 }
 .links {
     font-size: 15px;
-    font-weight: bold;
     text-decoration: none;
-    border: solid 2px black;
+    border: solid 2px var(--black);
     padding: 5px;
     border-radius: 4px;
     margin: 10px;
@@ -101,7 +99,7 @@ span > .blink {
     transition-duration: 0.4s;
 }
 .links:active {
-    background-color: black;
+    background-color: var(--black);
 }
 .linx {
     font-family: 'Space Mono', monospace !important;
@@ -151,8 +149,8 @@ p, blockquote {
     /* width: 50%; */
 }
 .fakeButton, .fakeButton:hover {
-    color: white;
-    background-color: black;
+    color: var(--white);
+    background-color: var(--black);
     margin-right: 20px;
     cursor: pointer;
 }
@@ -163,7 +161,7 @@ button:disabled {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     padding: 10px;
-    border: 2px solid black; 
+    border: 2px solid var(--black); 
     border-radius: 10px;    
     /* Black n White Filter */
     -webkit-filter: grayscale(100%);
