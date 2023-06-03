@@ -154,11 +154,6 @@ p, blockquote {
 .undline:hover {
     text-decoration: underline;
 }
-/* .center, .fakeButton {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
 /* == It's Button Time! ==*/
 .button-container {
     display: flex;
@@ -171,7 +166,7 @@ p, blockquote {
     background-color: var(--black);
     color: var(--white);
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 2px solid var(--white);
     transition: background-color 0.3s ease;
 }
