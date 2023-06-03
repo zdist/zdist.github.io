@@ -1,17 +1,21 @@
-/* Website Portion Start */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+/* == Website Portion Start == */
 * {
     box-sizing: border-box;
     /* background-color: white; */
 } 
 body {
     font-family: 'Space Mono', monospace;
-    background-color: white;
+    background-color: var(--white);
     padding: 10px !important;
 }
 
 /* A is for the way you ... */
 a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
 }
 a:hover {
@@ -34,7 +38,7 @@ li a {
     text-decoration: underline;
 }
 hr {
-    border: 2px solid black !important;
+    border: 2px solid var(--black) !important;
     margin: 2px 0 !important;
     clear: right !important;
     border-radius: 2px !important;
@@ -44,11 +48,11 @@ hr {
     font-weight: 400;
 }
 .w3-top:hover {
-    background-color: #ccc !important;
+    background-color: #ccc;
 }
 .w3-button:hover {
     border-radius: 6px !important;
-    background-color: #ccc !important;
+    background-color: #ccc;
 }
 #about, #bio, #experience {
     padding-left: 200px; 
@@ -78,7 +82,7 @@ span > .blink {
 #contact {
     text-align: center;
 }
-/* Links Start */
+/* == Links Start == */
 .links, .linx {
     text-align: center;
 }
@@ -103,7 +107,7 @@ span > .blink {
     font-family: 'Space Mono', monospace !important;
     text-align: center;
 }
-/* Links End */
+/* == Links End == */
 
 /* Stop! Header Time! */
 .header {
@@ -212,7 +216,7 @@ button:disabled {
     text-align: center;
     border-radius: 10px;
 }
-/* Website Portion End */
+/* == Website Portion End == */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 830px) {
