@@ -155,15 +155,26 @@ p, blockquote {
     margin-right: auto;
     /* width: 50%; */
 }
-.fakeButton, .fakeButton:hover {
-    color: var(--white);
-    background-color: var(--black);
-    margin-right: 20px;
-    cursor: pointer;
+/* == It's Button Time! ==*/
+.button-container {
+    display: flex;
+    justify-content: center;
 }
-button:disabled {
-    cursor: not-allowed;
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
 }
+.button:hover {
+    background-color: #ddd;
+}
+/* == Button Time has ended :( ==*/
 .lColum, .mColum, .rColum {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
