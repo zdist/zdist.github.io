@@ -6,6 +6,11 @@
     --white: #ffffff;
     --black: #000000;
 }
+/* == Light Mode to Dark Mode Converter == */
+.dark-mode {
+    background-color: var(--black);
+    color: var(--white);
+}
 /* == Website Portion Start == */
 * {
     box-sizing: border-box;
