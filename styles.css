@@ -15,7 +15,7 @@
 * {
     box-sizing: border-box;
 } 
-body {
+body { /* Why is body{color:white;} when it ISN'T?! */
     font-family: var(--SpaceMono);
     background-color: var(--white);
     padding: 10px !important;
