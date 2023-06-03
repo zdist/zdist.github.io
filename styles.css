@@ -56,6 +56,7 @@ hr {
     text-decoration: underline !important;
 }
 .w3-button:hover {
+    background-color: var(--white) !important;
     text-decoration: underline !important;
 }
 #about, #bio, #experience {
@@ -70,7 +71,7 @@ hr {
 span {
     font-family: var(--SpaceGrotesk) !important;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     margin-right: 1em;
 }
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
@@ -91,7 +92,7 @@ span > .blink {
     text-align: center;
 }
 .links {
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     border: solid 2px var(--black);
     padding: 5px;
@@ -228,7 +229,7 @@ button:disabled {
         padding-left: 25px;
     }
     li a {
-        font-size: 15px;
+        font-size: 16px;
         display: inline-block;
         padding: 0px 0px;
         text-decoration: none;
