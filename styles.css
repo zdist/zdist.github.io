@@ -14,11 +14,11 @@
 /* == Website Portion Start == */
 * {
     box-sizing: border-box;
-    /* background-color: white; */
 } 
 body {
     font-family: var(--SpaceMono);
     background-color: var(--white);
+    color: var(--white);
     padding: 10px !important;
     line-height: 1.2em !important;
 }
