@@ -52,7 +52,7 @@ hr {
     font-weight: 400;
 }
 .w3-top:hover {
-    background-color: var(--white);
+    background-color: var(--white) !important;
     text-decoration: underline !important;
 }
 .w3-button:hover {
