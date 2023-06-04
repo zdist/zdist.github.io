@@ -49,6 +49,7 @@ hr {
     border-radius: 2px !important;
 }
 .w3-top {
+    padding-top: 10px;
     font-family: var(--SpaceGrotesk);
     font-weight: 400;
 }
