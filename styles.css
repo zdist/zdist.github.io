@@ -5,6 +5,11 @@
     /*  Colors */
     --white: #ffffff;
     --black: #000000;
+    --highlight-color: #565656;
+}
+::selection {
+    background: var(--highlight-color);
+    color: var(--white);
 }
 /* == Website Portion Start == */
 * {
