@@ -14,7 +14,6 @@
 /* == Website Portion Start == */
 * {
     box-sizing: border-box;
-    /* background-color: white; */
 } 
 body {
     font-family: var(--SpaceMono);
@@ -100,7 +99,7 @@ span > .blink {
     font-size: 16px;
     text-decoration: none;
     border: solid 2px var(--black);
-    color: var(--white);
+    color: var(--black);
     padding: 5px;
     border-radius: 4px;
     margin: 10px;
@@ -129,7 +128,7 @@ span > .blink {
     text-align: center;
     border-radius: 10px;
 }
-.header > h2 { /* Zo DiSanto */
+.header > h2 { /* 'Zo DiSanto' */
     font-size: 35px;
 }
 .header > p { /* 'Your friendly neighborhood Web Developer' */
