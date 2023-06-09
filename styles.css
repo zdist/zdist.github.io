@@ -88,8 +88,9 @@ span > .blink {
         opacity: 0;
     }
 }
-#contact {
+#about, #projects, #experience, #contact {
     text-align: center;
+    padding-top: 60px;
 }
 /* == Links Start == */
 /* .links, .linx {
