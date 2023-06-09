@@ -92,9 +92,9 @@ span > .blink {
     text-align: center;
 }
 /* == Links Start == */
-.links, .linx {
+/* .links, .linx {
     text-align: center;
-}
+} */
 .links {
     font-size: 16px;
     text-decoration: none;
