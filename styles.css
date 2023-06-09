@@ -5,10 +5,10 @@
     /*  Colors */
     --white: #ffffff;
     --black: #000000;
-    --highlight-color: #565656;
+    --gray: #565656;
 }
 ::selection {
-    background: var(--highlight-color);
+    background: var(--gray);
     color: var(--white);
 }
 /* == Website Portion Start == */
@@ -29,7 +29,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: var(--black);
     text-decoration: none;
 }
 /* Nav Bar > Marz Barz  (w/ dropdown menu) */
@@ -134,7 +134,7 @@ span > .blink {
     font-family: var(--SpaceMono) !important;
     font-size: 25px;
     font-style: italic;
-    opacity: 0.55;
+    color: var(--gray);
 }
 p, blockquote {
     font-family: var(--SpaceMono) !important;
