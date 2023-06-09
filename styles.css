@@ -89,9 +89,6 @@ span > .blink {
     }
 }
 /* == Links Start == */
-/* .links, .linx {
-    text-align: center;
-} */
 .links {
     font-size: 16px;
     text-decoration: none;
@@ -210,6 +207,9 @@ p, blockquote {
 /* Style the right column */
 .rColum {
     grid-area: right;
+}
+#contact {
+    text-align: center;
 }
 /* In the Name of Images */
 .img {
