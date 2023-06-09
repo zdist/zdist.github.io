@@ -108,9 +108,11 @@ span > .blink {
     text-decoration: none;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
     transition-duration: 0.4s;
+    color: var(--white);
 }
 .links:active {
     background-color: var(--black);
+    color: var(--white);
 }
 .linx {
     font-family: var(--SpaceMono) !important;
