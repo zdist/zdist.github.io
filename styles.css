@@ -208,9 +208,9 @@ p, blockquote {
 .rColum {
     grid-area: right;
 }
-#contact {
+/* #contact {
     text-align: center;
-}
+} */
 /* In the Name of Images */
 .img {
     display: block;
