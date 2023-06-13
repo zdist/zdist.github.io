@@ -113,12 +113,12 @@ span > .blink {
     text-decoration: none;
     box-shadow: 5px 5px var(--font-color);
     transition-duration: 0.4s;
-    color: var(--background-color);
+    /* color: var(--background-color); */
+    /* background-color: var(--background-color); */
 }
-.links:active {
+/* .links:active {
     background-color: var(--background-color);
-    /* color: var(--font-color); */
-}
+} */
 .linx {
     font-family: var(--SpaceMono) !important;
     text-align: center;
