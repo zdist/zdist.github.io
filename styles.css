@@ -7,16 +7,25 @@
     --gray: #565656;
     --font-color: #1a1a1a;
 }
-html[data-theme='light'] {
+  
+/* If user prefers a dark appearance */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1a1a1a;
+        --gray: #565656;
+        --font-color: #f9f9f9;
+    }
+}
+/* html[data-theme='light'] {
     --background-color: #f9f9f9;
     --gray: #565656;
     --font-color: #1a1a1a;
 }
-html[data-theme='dark'] { /* Flip it? */
+html[data-theme='dark']
     --background-color: #1a1a1a;
     --gray: #565656;
     --font-color: #f9f9f9;
-}
+} */
 ::selection {
     background: var(--gray);
     color: var(--background-color);
