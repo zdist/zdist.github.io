@@ -110,7 +110,7 @@ span > .blink {
 }
 .links:hover {
     text-decoration: none;
-    box-shadow: 5px 5px;
+    box-shadow: 5px 5px var(--font-color);
     transition-duration: 0.4s;
     color: var(--background-color);
 }
@@ -272,7 +272,7 @@ p, blockquote {
     }
     .lColum:hover, .mColum:hover, .rColum:hover {
         /* Shadow */
-        box-shadow: 5px 5px;
+        box-shadow: 5px 5px var(--font-color);
         transition-duration: 0.4s;
     }
 }
