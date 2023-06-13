@@ -187,7 +187,7 @@ p, blockquote {
 }
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
     /* transition-duration: 0.4s; */
     /* Change to color on hover */
     -webkit-filter: none;
