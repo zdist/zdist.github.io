@@ -3,13 +3,23 @@
     --SpaceGrotesk: 'Space Grotesk', sans-serif;
     --SpaceMono: 'Space Mono', monospace;
     /*  Colors */
-    --white: #f9f9f9;
+    --background-color: #f9f9f9;
     --gray: #565656;
-    --black: #1a1a1a;
+    --font-color: #1a1a1a;
+}
+html[data-theme='light'] {
+    --background-color: #f9f9f9;
+    --gray: #565656;
+    --font-color: #1a1a1a;
+}
+html[data-theme='dark'] { /* Flip it? */
+    --background-color: #1a1a1a;
+    --gray: #565656;
+    --font-color: #f9f9f9;
 }
 ::selection {
     background: var(--gray);
-    color: var(--white);
+    color: var(--background-color);
 }
 /* == Website Portion Start == */
 * {
@@ -17,18 +27,18 @@
 } 
 body {
     font-family: var(--SpaceMono);
-    background-color: var(--white);
+    background-color: var(--background-color);
     padding: 10px !important;
     line-height: 1.2em !important;
 }
 
 /* A is for the way you ... */
 a {
-    color: var(--black);
+    color: var(--font-color);
     text-decoration: none;
 }
 a:hover {
-    background-color: var(--black);
+    background-color: var(--font-color);
     text-decoration: none;
 }
 /* Nav Bar > Marz Barz  (w/ dropdown menu) */
@@ -47,7 +57,7 @@ li a {
     text-decoration: underline;
 }
 hr {
-    border: 2px solid var(--black) !important;
+    border: 2px solid var(--font-color) !important;
     margin: 2px 0 !important;
     clear: right !important;
     border-radius: 2px !important;
@@ -60,7 +70,7 @@ hr {
     text-decoration: underline !important;
 }
 .w3-button:hover {
-    background-color: var(--white) !important;
+    background-color: var(--background-color) !important;
     text-decoration: underline !important;
 }
 #about, #bio, #experience {
@@ -92,21 +102,21 @@ span > .blink {
 .links {
     font-size: 16px;
     text-decoration: none;
-    border: solid 2px var(--black);
-    color: var(--black);
+    border: solid 2px var(--font-color);
+    color: var(--font-color);
     padding: 5px;
     border-radius: 4px;
     margin: 10px;
 }
 .links:hover {
     text-decoration: none;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px;
     transition-duration: 0.4s;
-    color: var(--white);
+    color: var(--background-color);
 }
 .links:active {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--font-color);
+    color: var(--background-color);
 }
 .linx {
     font-family: var(--SpaceMono) !important;
@@ -158,36 +168,36 @@ p, blockquote {
     display: inline-block;
     margin: 10px;
     padding: 8px 16px;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--font-color);
+    color: var(--background-color);
     text-decoration: none;
     border-radius: 4px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--font-color);
     transition: background-color 0.3s ease;
 }
 .button:hover {
-    background-color: var(--white);
-    color: var(--black);
-    border: 2px solid var(--black);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border: 2px solid var(--font-color);
 }
 /* == Button Time has ended :( ==*/
 .lColum, .mColum, .rColum {
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     padding: 10px;
-    border: 2px solid var(--black); 
+    border: 2px solid var(--font-color); 
     border-radius: 10px;    
     /* Black n White Filter */
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
-    filter: gray; /* IE 6-9 */
+    filter: var(--gray); /* IE 6-9 */
     transition-timing-function: linear;
 }
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 5px 5px;
     /* transition-duration: 0.4s; */
     /* Change to color on hover */
     -webkit-filter: none;
@@ -234,7 +244,7 @@ p, blockquote {
 /* == Website Portion End == */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 830px) {
+@media (max-width: 800px) {
     #about, #experience {
         padding-right: 25px;
         padding-left: 25px;
@@ -262,7 +272,7 @@ p, blockquote {
     }
     .lColum:hover, .mColum:hover, .rColum:hover {
         /* Shadow */
-        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 5px;
         transition-duration: 0.4s;
     }
 }
