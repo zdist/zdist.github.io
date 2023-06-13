@@ -114,8 +114,8 @@ span > .blink {
     text-decoration: none;
     box-shadow: 5px 5px var(--font-color);
     transition-duration: 0.4s;
-    /* color: var(--background-color); */
-    /* background-color: var(--background-color); */
+    color: var(--font-color);
+    background-color: var(--background-color);
 }
 /* .links:active {
     background-color: var(--background-color);
@@ -201,7 +201,6 @@ p, blockquote {
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
     box-shadow: 5px 5px var(--font-color);
-    /* transition-duration: 0.4s; */
     /* Change to color on hover */
     -webkit-filter: none;
     -moz-filter: none;
