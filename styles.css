@@ -9,13 +9,13 @@
 }
   
 /* If user prefers a dark appearance */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #1a1a1a;
         --gray: #565656;
         --font-color: #f9f9f9;
     }
-}
+} */
 /* html[data-theme='light'] {
     --background-color: #f9f9f9;
     --gray: #565656;
