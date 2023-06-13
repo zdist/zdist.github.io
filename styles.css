@@ -116,8 +116,8 @@ span > .blink {
     color: var(--background-color);
 }
 .links:active {
-    background-color: var(--font-color);
-    color: var(--background-color);
+    background-color: var(--background-color);
+    /* color: var(--font-color); */
 }
 .linx {
     font-family: var(--SpaceMono) !important;
