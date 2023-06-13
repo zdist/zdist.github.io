@@ -65,6 +65,7 @@ hr {
 .w3-top {
     font-family: var(--SpaceGrotesk);
     font-weight: 400;
+    color: var(--font-color);
 }
 .w3-top:hover {
     text-decoration: underline !important;
