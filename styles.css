@@ -198,7 +198,7 @@ p, blockquote {
 }
 .lColum:hover, .mColum:hover, .rColum:hover {
     /* Shadow */
-    box-shadow: 5px 5px;
+    box-shadow: 5px 5px var(--font-color);
     /* transition-duration: 0.4s; */
     /* Change to color on hover */
     -webkit-filter: none;
