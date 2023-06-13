@@ -8,23 +8,13 @@
     --font-color: #1a1a1a;
 }
   
-/* If user prefers a dark appearance */
+/* If user prefers a dark appearance [play w/this later] */
 /* @media (prefers-color-scheme: dark) {
     :root {
         --background-color: #1a1a1a;
         --gray: #565656;
         --font-color: #f9f9f9;
     }
-} */
-/* html[data-theme='light'] {
-    --background-color: #f9f9f9;
-    --gray: #565656;
-    --font-color: #1a1a1a;
-}
-html[data-theme='dark']
-    --background-color: #1a1a1a;
-    --gray: #565656;
-    --font-color: #f9f9f9;
 } */
 ::selection {
     background: var(--gray);
@@ -227,9 +217,6 @@ p, blockquote {
 .rColum {
     grid-area: right;
 }
-/* #contact {
-    text-align: center;
-} */
 /* In the Name of Images */
 .img {
     display: block;
@@ -253,7 +240,7 @@ p, blockquote {
 /* == Website Portion End == */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
     #about, #experience {
         padding-right: 25px;
         padding-left: 25px;
