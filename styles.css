@@ -158,7 +158,7 @@ p, blockquote {
     grid-column-gap: 10px; 
     grid-row-gap: 10px; 
 } 
-.undline:hover {
+.undline, .undline:hover {
     text-decoration: underline;
     background-color: none;
 }
