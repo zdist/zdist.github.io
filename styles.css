@@ -159,6 +159,7 @@ p, blockquote {
 } 
 .undline:hover {
     text-decoration: underline;
+    background-color: none;
 }
 /* == It's Button Time! ==*/
 .button-container {
