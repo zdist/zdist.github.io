@@ -103,8 +103,9 @@ span > .blink {
 .links {
     font-size: 16px;
     text-decoration: none;
-    border: solid 2px var(--font-color);
     color: var(--font-color);
+    border: solid 2px var(--font-color);
+    background-color: var(--background-color);
     padding: 5px;
     border-radius: 4px;
     margin: 10px;
