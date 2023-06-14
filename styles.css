@@ -68,6 +68,8 @@ hr {
     font-family: var(--SpaceGrotesk);
     font-weight: 400;
     color: var(--font-color);
+    /* Added Navbar Background Color */
+    background-color: var(--background-color);
 }
 .w3-top:hover {
     text-decoration: underline !important;
