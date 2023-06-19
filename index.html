@@ -174,7 +174,23 @@
             <p class="subtext">Last Edited: 19 June 2023 &bull; Designed and coded by Zo DiSanto</p>
         </div>
 
-        <script href="main.js"></script>
+        <script>
+            $("#content").on("click", ".tabs a", function(e) {
+                e.preventDefault(),
+                $(this)
+                    .parents(".tab-container")
+                    .find(".tab-content > div")
+                    .each(function() {
+                        $(this).hide();
+                    });
+                
+                $(this)
+                    .parents(".tabs")
+                    .find("a")
+                    .removeClass("active"),
+                    $(this).toggleClass("active"), $("#" + $(this).attr("src")).show();
+            });
+        </script>
 
     </body>
 </html>
