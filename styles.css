@@ -155,10 +155,10 @@ p, blockquote {
 /*     min-height: 600px; */
   margin: 30px;
 }
-.tab-container {
-/*     position: relative; */
-/*     margin: 20px auto; */
-}
+/* .tab-container {
+    position: relative;
+    margin: 20px auto;
+} */
 ul.tabs {
     display: flex;
     position: relative;
