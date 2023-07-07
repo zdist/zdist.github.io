@@ -136,7 +136,7 @@ span > .blink {
     border-radius: 10px;
 }
 .header > h2 { /* 'Zo DiSanto' */
-    font-size: 35px;
+    font-size: 40px;
 }
 .header > p { /* 'Your friendly neighborhood Web Developer' */
     font-family: var(--SpaceMono) !important;
@@ -209,6 +209,7 @@ ul.tabs a.active {
         'footer footer footer footer footer footer';
     grid-column-gap: 10px; 
     grid-row-gap: 10px; 
+    margin: 0 20px 0 20px;
 } 
 .undline, .undline:hover {
     text-decoration: underline;
