@@ -23,6 +23,7 @@
 /* == Website Portion Start == */
 * {
     box-sizing: border-box;
+    background-color: var(--background-color);
 } 
 html {
     scroll-behavior: smooth;
