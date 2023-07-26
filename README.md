@@ -6,9 +6,9 @@ My little corner of the internet / digital portfolio
 
 # <a href="https://umbraco.com/knowledge-base/http-status-codes/#418-im-a-teapot">418</a>:  I'm a Teapot
 
-##### I'm only kidding, but this page *is* always under construction. 🚧
+##### I'm only kidding, but like most things on the internet, this page is *always*...
 
-## ⚠️ Caution ⚠️
+<p align="center"> <img src="https://64.media.tumblr.com/f0da7c50d726e64c6c0d8a985240b6f4/dfbbb68a95adf2d4-ce/s250x400/afe73dd5883647200c53408018ed3be99b567b80.gif"/></p>
 
 **Note:** The content on this website is constantly evolving as I gain more experience, refine my preferences, and acquire new skills. Don't be surprised if you visit the site on one day and notice minor visual changes the next day. I'm always busy learning and improving! 
 
