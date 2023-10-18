@@ -20,6 +20,27 @@
     background: var(--gray);
     color: var(--background-color);
 }
+/* == Scrollbar Styling == */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--gray); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--gray); 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--font-color); 
+}
 /* == Website Portion Start == */
 * {
     box-sizing: border-box;
