@@ -23,7 +23,7 @@
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px; /* has 2b 10 for usability. 6 for aesthetic */
 }
 
 /* Track */
