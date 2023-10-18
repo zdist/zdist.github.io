@@ -23,7 +23,7 @@
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 
 /* Track */
@@ -37,7 +37,6 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--gray); 
-    border-radius: 2px;
 }
 
 /* Handle on hover */
