@@ -23,10 +23,11 @@
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
+    background-color: transparent;
     width: 10px;
 }
 
-/* Track */
+/* Track (has been removed thans to "background-color: transparent;") */
 /* ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 2px var(--gray); 
 }*/
