@@ -23,6 +23,7 @@
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
+    background-color: var(--background-color);
     width: 10px;
 }
 
