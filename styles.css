@@ -36,12 +36,12 @@
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--gray); 
+    background: var(--font-color);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--font-color); 
+    background: var(--gray); 
 }
 /* == Website Portion Start == */
 * {
