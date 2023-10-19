@@ -20,6 +20,29 @@
     background: var(--gray);
     color: var(--background-color);
 }
+/* == Scrollbar Styling == */
+/* width */
+::-webkit-scrollbar {
+    width: 10px; /* has 2b 10 for usability. 6 for aesthetic */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* box-shadow: inset 0 0 2px var(--gray); */
+    border: none;
+    /* border: 1px solid var(--background-color); */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--font-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray); 
+}
 /* == Website Portion Start == */
 * {
     box-sizing: border-box;
@@ -75,9 +98,15 @@ hr {
 .w3-top:hover {
     text-decoration: underline !important;
 }
-.w3-button:hover {
+.w3-button, .w3-bar-item {
+    text-decoration: none;
+    border-bottom: 6px solid transparent;
+    transition: all 0.4s ease;
+}
+.w3-button:hover, .w3-bar-item:hover {
     background-color: var(--background-color) !important;
-    text-decoration: underline !important;
+    /*text-decoration: underline !important;*/
+    border-bottom: 4px solid var(--font-color);
 }
 #about, #bio, #experience {
     padding-left: 200px; 
@@ -129,19 +158,27 @@ span > .blink {
 /* == Links End == */
 
 /* Stop! Header Time! */
+.header, .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background-image: var(--sippy); */
+    background-size: cover; 
+}
 .header {
     font-family: var(--SpaceGrotesk);
-    grid-area: header;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
+    /* There has to be a better way to do this: */
+    /* margin-top: -40px; */
 }
 .header > h2 { /* 'Zo DiSanto' */
-    font-size: 40px;
+    font-size: 4rem;
 }
 .header > p { /* 'Your friendly neighborhood Web Developer' */
     font-family: var(--SpaceMono) !important;
-    font-size: 25px;
+    font-size: 2rem;
     font-style: italic;
     color: var(--gray);
     line-height: 30px;
@@ -279,7 +316,8 @@ ul.tabs a.active {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    height: 300px;
+    /*width: 300px;*/
     border-radius: 10px;
 }
 .subtext {
