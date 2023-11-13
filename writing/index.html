@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Blog Insperation From AsmrProg on YouTube: https://www.youtube.com/watch?v=wSMfn6etuus -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Zo DiSanto | Blog</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Styles Font Awesome: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- <br /><hr class="lil"> -->
+      <br /><hr>
+      <div class="content">
+        <header>
+          <div class="info">
+            <h1 class="blog-title">Zo DiSanto</h1>
+          </div>
+        </header>
+        
+        <section class="details">
+          <div class="item">
+            <p class="item-text"><span>Introduction to JavaScript</span></p>
+          </div>
+        </section>
+        <section class="details">    
+          <div class="item" >
+            <a class="item-text" href="../blog/boogle/index.html" target="_blank">Boogle</a>
+          </div>
+        </section>
+        <section class="details">
+          <div class="item">
+            <p class="item-text">Introduction to CSS</p>
+          </div>
+        </section>
+        <section class="details">
+          <div class="item">
+            <p class="item-text"><span>Introduction to HTML</span></p>
+          </div>
+        </section>
+
+        <section class="footer"> 
+          <small class="subtext">© <b id="date" style="font-weight: 400;">2023</b> • Designed and coded by Zo DiSanto</small>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const todaysDate = new Date();
+      let currentYear = todaysDate.getFullYear();
+      document.getElementById("date").innerHTML = currentYear;
+    </script>
+
+  </body>
+</html>

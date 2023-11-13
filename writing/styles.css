@@ -1,0 +1,74 @@
+:root { 
+    /*  Fonts */
+    --SpaceGrotesk: 'Space Grotesk', sans-serif;
+    --SpaceMono: 'Space Mono', monospace;
+    /*  Colors */
+    --background-color: #1a1a1a;
+    --gray: #565656;
+    --font-color: #f9f9f9;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* == Scrollbar Styling == */
+/* Width */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border: none;
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--gray);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--font-color); 
+}
+/* == Body Styling == */
+body {
+    font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
+    background: var(--background-color);
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+hr {
+    border: 1px double var(--gray);
+    width: 100%vw;
+}
+/* br {
+    border-bottom: 1px double var(--gray);
+} */
+/* .lil {
+    top: -100px;
+} */
+.container {
+    border: 2px double var(--gray);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.content {
+    padding: 20px;
+}
+header {
+    padding-bottom: 10px;
+}
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+a:hover {
+    background-color: var(--gray);
+}
+.footer {
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0 0 0;
+}

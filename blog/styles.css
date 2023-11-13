@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Same Color Pallet as: https://zdisanto.github.io/startpage/ */
+:root { 
+    /* Color Pallet: https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241 */
+    --background: #0D1117; /* GitHub Dark Mode Dark Blue */
+    --foreground: #293241; /* Nearly Black */
+    --header: rgba(41, 50, 66, 0.5); /* Kinda Transparent */
+    --orange: #ee6c4d; /* Orange */
+    --blue-gray: #3d5a80; /* Blue Gray */
+    --gray-blue: #98c1d9; /* Light Gray-ish Blue*/
+    --accent: #e0fbfc; /* Light Blue almost White */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* == Scrollbar Styling == */
+/* width */
+::-webkit-scrollbar {
+    width: 10px; /* has 2b 10 for usability. 6 for aesthetic */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* box-shadow: inset 0 0 2px var(--gray); */
+    border: none;
+    /* border: 1px solid var(--background-color); */
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--foreground);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-gray); 
+}
+/* == Body Styling == */
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    color: var(--orange);
+    background-color: var(--background);
+    padding: 50px;
+}
+body .container {
+    max-width: 1000px;
+}
+/* == Body (Header) Styling == */
+body .container header {
+    /* I edited this photo from the PDF in the blog file titled: susankare_ohneschnittklein.pdf */
+    /* background: url(susan-kare.png) center / cover no-repeat; */
+    background: var(--header) center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* min-height: 400px; */
+    /* max-width: 800px; */
+    padding: 20px;
+    border-radius: 16px;
+}
+body .container header .author {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+body .container header .info {
+    text-align: center;
+}
+body .container header .info .blog-title {
+    margin: 10px 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+body .container header .info .tags i {
+    font-size: 10px;
+    margin-right: 4px;
+    margin-bottom: 20px;
+}
+body .container header .info .tags span {
+    font-size: 0.8rem;
+}
+body .container header .info .subtitle {
+    min-width: 70%;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+}
+/* == Body (Blog Links) Styling == */
+body .details {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-top: 50px;
+    padding: 20px 50px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--blue-gray);
+}
+body .details .item .item-title {
+    color: var(--blue-gray);
+}
+body .details .item .item-text {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    color: var(--gray-blue);
+}
+body .details .item .item-text a {
+    color: inherit;
+}
+.item-title .item-text a:visited {
+    color: var(--background);
+}
+.item-title .item-text a:hover {
+    color: var(--orange);
+}
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;;
+}
+.link {
+    text-decoration: none;
+}
+.preview {
+    text-align: right;
+}
+.footer {
+    color: var(--gray-blue);
+    padding: 40px 0;
+    text-align: center;
+    font-size: small;
+}
+@media screen and (max-width: 768px) {
+    body .container header {
+        padding: 10px 20px 30px;
+        min-height: 300px;
+        /* max-width: 600px; */
+    }
+    body .container header .author {
+        font-size: 0.9rem;
+    }
+    body .container header .info .blog-title {
+        font-size: 2.2rem;
+    }
+    body .container header .info .subtitle {
+        font-size: 0.8rem;
+    }
+    body .container .details {
+        flex-direction: column;
+    }
+    body .container .details .item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

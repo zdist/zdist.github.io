@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Blog Insperation From AsmrProg on YouTube: https://www.youtube.com/watch?v=wSMfn6etuus -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Zo DiSanto | Boogle</title>
+        <!-- Styles Font Awesome: -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- My Styles -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- A little JS to clean up the path -->
+        <script>
+            window.history.replaceState('','','/blog/boogle');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="author">mkdir enzo</div>
+                <div class="info">
+                    <h1 class="blog-title">Boo<span style="color: #e0fbfc;">gle!</span></h1>
+                    <div class="tags">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Coding, Programming</span>
+                    </div>
+                    <p class="subtitle">Let's create a spooky Google called Boogle!</p>
+                </div>
+            </header>
+            <section class="details">
+                <div class="item">
+                    <h5 class="item-title">Reading Time</h5>
+                    <p class="item-text">
+                        <!-- LET"S UPDATE THIS WHEN FINISHED. TIME the SPEACH > START SPEAKING -->
+                        <span class="item-text">3</span> Mins
+                    </p>
+                </div>
+                <div class="item">
+                    <h5 class="item-title">Publish Date</h5>
+                    <p class="item-text">
+                        <span class="item-text">Sept 29, 2023</span>
+                    </p>
+                </div>
+                <div class="item">
+                    <h5 class="item-title">Source Code</h5>
+                    <p class="item-text">
+                        <span class="item-text"><a href="https://github.com/zdisanto/Boogle" target="_blank">View</a></span>
+                    </p>
+                </div>
+            </section>
+            <article>
+                <blockquote>This is a brief review of <a href="" target="_blank">Introduction to HTML</a> and 
+                    <a href="" target="_blank">Introduction to CSS</a>. In this review, you will learn that once 
+                    you have a firm grasp of the basics, you will be able to look at many websites on the internet, 
+                    such as Google, and be able to create a similar copy of it from scratch.</blockquote>
+
+                <h4>Part One: HTML</h4>
+                <p>Go ahead and open up your text editor of choice.</p> 
+                <!-- (ex., <a href="https://code.visualstudio.com" target="_blank">VS Code</a>, 
+                    <a href="https://www.sublimetext.com" target="_blank">Sublime Text</a>, 
+                    <a href="https://replit.com" target="_blank">Replit</a>, 
+                    <a href="https://jsbin.com/?html,output" target="_blank">JS Bin</a>...) -->
+                <p>Create a folder in a preferable location on your computer and call it Boogle. In that folder, 
+                    create a file called <code>index.html</code> .</p>
+                    <blockquote><b>Side Note: </b>If you are using a web browser such as JS Bin or Replit, simply 
+                        locate the <code>index.html</code> file.</blockquote>
+                <p>Create a simple <code>index.html</code> boilerplate.</p>
+                    <blockquote><b>Hint: </b>If you don't remember how to create a HTML boilerplate, check out 
+                        the <a href="" target="_blank">Introduction to HTML</a> blog post.</blockquote>
+                <p>Under the opening <code>&lt;body&gt;</code> tag, create a <code>&lt;h1&gt;</code> tag and write 
+                    inside it, Boogle.</p>
+                
+                <p>After the <code>&lt;h1&gt;</code> tag, add a <code>&lt;form&gt;</code> tag and inside of it, 
+                    create an <code>&lt;input /&gt;</code> tag. When you have finished this, you should have something 
+                    that looks like the code below:</p>
+                <!-- HTML CODE so far: -->
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;meta name="viewport" content="width=device-width"&gt;
+                            &lt;title&gt;Boogle&lt;/title&gt;
+                            &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
+                        &lt;/head&gt;
+
+                        &lt;!-- WHERE YOUR CODE STARTS: --&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt;&lt;span&gt;Boo&lt;/span&gt;gle&lt;/h1&gt; 
+                            &lt;form&gt;
+                                &lt;input /&gt;  
+                            &lt;/form&gt; 
+                            &lt;script src="script.js"&gt;&lt;/script&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                </pre>
+
+                <blockquote><b>Fun Fact: </b>Google doesn't use an <code>&lt;input&gt;</code> tag, instead they use a 
+                    <code>&lt;textarea&gt;</code> and a whole lot of <code>&lt;div&gt;</code>'s!<br />
+                    <div style="text-align: center;">
+                        <img src="https://media.giphy.com/media/scHwl0IVtZJSE1C10N/giphy.gif" style="width: 50%; border-radius: 6px;" /> 
+                    </div>
+                </blockquote>
+
+                <p>Below the <code>&lt;input&gt;</code> tag, add two buttons. Inside the left button, type "Search", 
+                    and inside the right button, write "I'm Feeling ____" replace the underscores with an adjective.</p>
+                <blockquote>An adjective is a word that describes a noun. For example, you can write Sleepy, Silly, Happy, or the Google default Lucky.</blockquote>
+                
+                <h4>Part Two: CSS</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem velit deserunt modi architecto corrupti totam fugit libero. Cum consequatur molestiae maiores, tenetur sunt, voluptate, minus suscipit natus a molestias illum!</p>
+                
+                <blockquote><b>Fun Fact: </b>"Cum consequatur molestiae maiores, tenetur sunt, voluptate, minus suscipit natus a molestias illum!"</blockquote>
+
+                <h4>Part Three: A Brief Introduction to JavaScript</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem velit deserunt modi architecto corrupti totam fugit libero. Cum consequatur molestiae maiores, tenetur sunt, voluptate, minus suscipit natus a molestias illum!</p>
+                
+                <blockquote>"Cum consequatur molestiae maiores, tenetur sunt, voluptate, minus suscipit natus a molestias illum!" &mdash; Lorem Ipsum</blockquote>
+
+            </article>
+        </div>
+    </body>
+</html>

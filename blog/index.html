@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Blog Insperation From AsmrProg on YouTube: https://www.youtube.com/watch?v=wSMfn6etuus -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Zo DiSanto | Blog</title>
+        <!-- Styles Font Awesome: -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- My Styles -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="author">mkdir enzo</div>
+                <div class="info">
+                    <h1 class="blog-title">Blogs</h1>
+                    <div class="tags">
+                        <!-- <i class="fa-solid fa-tag"></i> -->
+                        <span>Coding, Programming, Designing and more</span>
+                    </div><br />
+                    <p class="subtitle">A brief documention on my current learning</p>
+                </div>
+            </header>
+
+            <!-- <section class="details">
+                <div class="item">
+                    <h5 class="item-title">10 November 2023</h5>
+                    <p class="item-text">
+                        <span>Introduction to JavaScript</span>
+                        <br />
+                        <small style="font-size: 16px;">The muscle of website development.</small>
+                    </p>
+                </div>
+                <div class="preview">
+                    <img src="../blog/boogle/boogle.png" style="max-width: 300px;" />
+                </div>
+            </section> -->
+            <section class="details">    
+                <div class="item" >
+                    <a class="link" href="../blog/boogle/index.html" target="_blank">
+                        <h5 class="item-title">28 September 2023</h5>
+                        <p class="item-text">
+                            <span>Boogle</span>
+                            <br />
+                            <small style="font-size: 16px;">A spooky Google.</small>
+                        </p>
+                    </a>
+                </div>
+                <div class="preview">
+                    <img src="../blog/boogle/boogle.png" style="max-width: 300px;" />
+                </div>
+            </section>
+            <section class="details">
+                <div class="item">
+                    <h5 class="item-title">20 July 2023</h5>
+                    <p class="item-text">
+                        <span>Introduction to CSS</span>
+                        <br />
+                        <small style="font-size: 16px;">The skin of website development.</small>
+                    </p>
+                </div>
+                <!-- <div class="preview">
+                    <img src="../blog/boogle/googleDIV.png" style="max-width: 300px;" />
+                </div> -->
+            </section>
+            <section class="details">
+                <div class="item">
+                    <h5 class="item-title">2 June 2023</h5>
+                    <p class="item-text">
+                        <span>Introduction to HTML</span>
+                        <br />
+                        <small style="font-size: 16px;">The bones of website development.</small>
+                    </p>
+                </div>
+                <!-- <div class="preview">
+                    <img src="../blog/boogle/boogle.png" style="max-width: 300px;" />
+                </div> -->
+            </section>
+            <section class="footer"> 
+                <p class="subtext">© <b id="date" style="font-weight: 400;">2023</b> • Designed and coded by Zo DiSanto</p>
+            </section>
+        </div>
+        <script>
+            const todaysDate = new Date();
+                let currentYear = todaysDate.getFullYear();
+                document.getElementById("date").innerHTML = currentYear;
+        </script>
+    </body>
+</html>

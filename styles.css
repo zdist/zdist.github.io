@@ -317,8 +317,11 @@ ul.tabs a.active {
     margin-left: auto;
     margin-right: auto;
     height: 300px;
-    /*width: 300px;*/
     border-radius: 10px;
+}
+.computer {
+    width: 390px;
+    height: 250px;
 }
 .subtext {
     font-size: small;
@@ -335,7 +338,7 @@ ul.tabs a.active {
 /* == Website Portion End == */
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
     #about, #experience {
         padding-right: 25px;
         padding-left: 25px;
