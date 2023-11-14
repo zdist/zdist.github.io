@@ -23,7 +23,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 48vh;
+    margin-top: 30%;
+    min-height: 100px;
 }
 #container {
     position: absolute;
