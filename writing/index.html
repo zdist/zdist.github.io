@@ -19,7 +19,7 @@
     <div id="container">
       <header>
         <div class="info">
-          <p class="title"><i class="fa fa-folder" aria-hidden="true"></i> ZoDiSanto &mdash; &ndash;zsh &mdash; <span id="widthHeight"></span></p>
+          <p class="title"><i class="fa fa-folder" aria-hidden="true"></i> ZoDiSanto &mdash; &ndash; zsh &mdash; <span id="widthHeight"></span></p>
         </div>
       </header>
       <!-- <hr> -->
@@ -50,7 +50,7 @@
              ---------------------------=apx=--
             </pre>
             <div class="item">
-              <p class="item-text"><span id="user"></span></p>
+              <p class="text"><span id="user"></span></p>
             </div>
         </section>
 
@@ -65,12 +65,11 @@
     <script>
       // Gather current time and date:
       const todaysDate = new Date();
-      let currentDate = new Intl.DateTimeFormat('en-UK', {
+      const currentDate = new Intl.DateTimeFormat('en-UK', {
           dateStyle: 'full',
           timeStyle: 'short',
           timeZone: 'America/New_York',
         }).format(todaysDate);
-      // let currentYear = todaysDate.getFullYear();
       document.getElementById("date").innerHTML = "Last login: " + currentDate + " on ttys000";
 
       // Gather Width & Height of .container:

@@ -23,8 +23,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30%;
-    min-height: 100px;
+    margin-top: 25%;
+    min-height: 200px;
+    max-height: 300px;
 }
 #container {
     position: absolute;
@@ -43,6 +44,10 @@ header {
     padding: 20px;
     background-color: var(--transparent);
     border-radius: 0 0 7px 7px;
+}
+.details {
+
+    z-index: 1;
 }
 .title {
     text-align: center;
