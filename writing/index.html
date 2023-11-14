@@ -4,11 +4,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Zo DiSanto | Blog</title>
+    <title>Zo DiSanto | Writings</title>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet"> -->
     <!-- Styles Font Awesome: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- My Styles -->
@@ -16,47 +16,76 @@
   </head>
   <body>
 
-    <div class="container">
-      <!-- <br /><hr class="lil"> -->
-      <br /><hr>
+    <div id="container">
+      <header>
+        <div class="info">
+          <p class="title"><i class="fa fa-folder" aria-hidden="true"></i> ZoDiSanto &mdash; &ndash;zsh &mdash; <span id="widthHeight"></span></p>
+        </div>
+      </header>
+      <!-- <hr> -->
+
       <div class="content">
-        <header>
-          <div class="info">
-            <h1 class="blog-title">Zo DiSanto</h1>
-          </div>
-        </header>
-        
+
         <section class="details">
-          <div class="item">
-            <p class="item-text"><span>Introduction to JavaScript</span></p>
-          </div>
-        </section>
-        <section class="details">    
-          <div class="item" >
-            <a class="item-text" href="../blog/boogle/index.html" target="_blank">Boogle</a>
-          </div>
-        </section>
-        <section class="details">
-          <div class="item">
-            <p class="item-text">Introduction to CSS</p>
-          </div>
-        </section>
-        <section class="details">
-          <div class="item">
-            <p class="item-text"><span>Introduction to HTML</span></p>
-          </div>
+            <p><span id="date"></span></p>
+            <!-- https://en.wikipedia.org/wiki/Lunar_plaque -->
+            <!-- ASCII ART FROM: https://www.asciiart.eu/space/moons -->
+            <pre>
+              ,
+            _=|_
+          _[_## ]_
+      _  +[_[_+_]P/    _    |_       ____      _=--|-~
+       ~---\_I_I_[=\--~ ~~--[o]--==-|##==]-=-~~  o]H
+      -~ /[_[_|_]_]\\  -_  [[=]]    |====]  __  !j]H
+        /    "|"    \      ^U-U^  - |    - ~ .~  U/~
+       ~~--__~~~--__~~-__   H_H_    |_     --   _H_
+      -. _  ~~~#######~~~     ~~~-    ~~--  ._ - ~~-=
+                 ~~~=~~  -~~--  _     . -      _ _ -
+      
+             ----------------------------------
+            |        June, 20th, 1969          |
+            |  Here Men from the Planet Earth  |
+            |   First set Foot upon the Moon   |
+            | We came in Peace for all Mankind |
+             ---------------------------=apx=--
+            </pre>
+            <div class="item">
+              <p class="item-text"><span id="user"></span></p>
+            </div>
         </section>
 
-        <section class="footer"> 
+        <!-- <section class="footer"> 
           <small class="subtext">© <b id="date" style="font-weight: 400;">2023</b> • Designed and coded by Zo DiSanto</small>
-        </section>
+        </section> -->
+
       </div>
+
     </div>
 
     <script>
+      // Gather current time and date:
       const todaysDate = new Date();
-      let currentYear = todaysDate.getFullYear();
-      document.getElementById("date").innerHTML = currentYear;
+      let currentDate = new Intl.DateTimeFormat('en-UK', {
+          dateStyle: 'full',
+          timeStyle: 'short',
+          timeZone: 'America/New_York',
+        }).format(todaysDate);
+      // let currentYear = todaysDate.getFullYear();
+      document.getElementById("date").innerHTML = "Last login: " + currentDate + " on ttys000";
+
+      // Gather Width & Height of .container:
+      // INSPO from: https://www.geeksforgeeks.org/how-to-get-the-elements-actual-width-and-height-in-javascript/
+      const container = document.getElementById("container"); 
+      const widthHeight = document.getElementById("widthHeight"); 
+          
+      widthHeight.innerHTML = container.offsetWidth + "x" + container.offsetHeight;
+   
+      // Gathering type of computer
+      // Inspo from: https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/platform
+      const code = navigator.platform;
+      const user = document.getElementById("user").innerHTML = "newUser@" + code + " ~ % &block;";
+
+
     </script>
 
   </body>

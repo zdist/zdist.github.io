@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk&family=Space+Mono&display=swap');
 :root { 
     /*  Fonts */
     --SpaceGrotesk: 'Space Grotesk', sans-serif;
@@ -6,6 +7,8 @@
     --background-color: #1a1a1a;
     --gray: #565656;
     --font-color: #f9f9f9;
+
+    --transparent: rgba(26, 26, 26, 0.8);
 }
 * {
     margin: 0;
@@ -33,7 +36,9 @@
 /* == Body Styling == */
 body {
     font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
-    background: var(--background-color);
+    /* BACKGROUND IMAGE FROM: https://unsplash.com/photos/island-painting-nbneQlI2M1A */
+    background: url(https://images.unsplash.com/photo-1578301977886-43be7b983104?q=80&w=1523&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
+    background-color: var(--background-color);
     color: var(--font-color);
     display: flex;
     justify-content: center;
@@ -44,31 +49,40 @@ hr {
     border: 1px double var(--gray);
     width: 100%vw;
 }
-/* br {
-    border-bottom: 1px double var(--gray);
-} */
-/* .lil {
-    top: -100px;
-} */
-.container {
-    border: 2px double var(--gray);
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+#container {
+    position: absolute;
+    border: 2px solid var(--gray);
+    /* background-color: var(--gray); */
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    /* background-color: var(--transparent); */
+    /* padding: 10px 40px; */
+    font-size: 12px;
+    border-radius: 10px;
+}
+header {
+    padding: 10px 40px;
+    background-color: var(--gray);
+    width: 100%;
+    border-radius: 6px 6px 0 0;
 }
 .content {
     padding: 20px;
+    /* box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5); */
+    background-color: var(--transparent);
+    border-radius: 0 0 7px 7px;
 }
-header {
-    padding-bottom: 10px;
-}
-a {
+/* a {
     color: var(--font-color);
     text-decoration: none;
 }
 a:hover {
     background-color: var(--gray);
+} */
+.title {
+    text-align: center;
 }
-.footer {
+/* .footer {
     font-size: 12px;
     text-align: center;
     margin: 10px 0 0 0;
-}
+} */
