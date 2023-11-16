@@ -17,8 +17,8 @@ I may include topics such as:
   - If you need it, just ask
 
 <details>
-<summary>Page Updates</summary>
-<br/>
+  <summary>Page Updates</summary>
+  <br/>
   <div align="center">
     <p>First Iteration</p>
     <img src="https://github.com/zdisanto/zdisanto.github.io/assets/70993217/06681b7e-584c-4e69-8ccf-8c1c9528180b" width="70%"/>
