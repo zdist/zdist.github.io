@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Blog Insperation From AsmrProg on YouTube: https://www.youtube.com/watch?v=wSMfn6etuus -->
   <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zo DiSanto | Brrrr...</title>
-    <!-- Google Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet"> -->
     <!-- Styles Font Awesome: -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- My Styles -->
@@ -21,71 +16,32 @@
         <div class="info">
           <p class="title"><i class="fa fa-folder" aria-hidden="true"></i> ZoDiSanto &mdash; &ndash; zsh &mdash; <span id="widthHeight"></span></p>
         </div>
-      </header>
-      <!-- <hr> -->
+      </header><hr>
 
       <div class="content">
 
         <section class="details">
-            <p><span id="date"></span></p>
-            <!-- https://en.wikipedia.org/wiki/Lunar_plaque -->
-            <!-- ASCII ART FROM: https://www.asciiart.eu/space/moons -->
-            <pre>
-              ,
-            _=|_
-          _[_## ]_
-      _  +[_[_+_]P/    _    |_       ____      _=--|-~
-       ~---\_I_I_[=\--~ ~~--[o]--==-|##==]-=-~~  o]H
-      -~ /[_[_|_]_]\\  -_  [[=]]    |====]  __  !j]H
-        /    "|"    \      ^U-U^  - |    - ~ .~  U/~
-       ~~--__~~~--__~~-__   H_H_    |_     --   _H_
-      -. _  ~~~#######~~~     ~~~-    ~~--  ._ - ~~-=
-                 ~~~=~~  -~~--  _     . -      _ _ -
-      
-             ----------------------------------
-            |        June, 20th, 1969          |
-            |  Here Men from the Planet Earth  |
-            |   First set Foot upon the Moon   |
-            | We came in Peace for all Mankind |
-             ---------------------------=apx=--
-            </pre>
+            <p><span class="greenDark" id="date"></span></p>
+            <p>&emsp;Don't type one of the following commands:
+              <br />&emsp;&emsp;&emsp;
+              <button onclick="about()" class="link blueDark">about</button>&emsp;&emsp;&emsp;&emsp;
+              <button onclick="notes()" class="link blueDark">notes</button><br />&emsp;&emsp;&emsp;
+              <button onclick="blog()" class="link blueDark">blog</button>&emsp;&emsp;&emsp;&emsp;&emsp;
+              <button onclick="favorites()" class="link blueDark">favorites</button><br />&emsp;&emsp;&emsp;
+              <button onclick="resume()" class="link blueDark">résumé</button>&emsp;&emsp;&emsp; 
+              <button onclick="help()" class="link blueDark">help</button><br />
+            </p>
             <div class="item">
-              <p class="text"><span id="user"></span></p>
+              <p id="more"></p>
+              <p class="greenDark"><span id="user"></span></p>
             </div>
         </section>
-
-        <!-- <section class="footer"> 
-          <small class="subtext">© <b id="date" style="font-weight: 400;">2023</b> • Designed and coded by Zo DiSanto</small>
-        </section> -->
 
       </div>
 
     </div>
 
-    <script>
-      // Gather current time and date:
-      const todaysDate = new Date();
-      const currentDate = new Intl.DateTimeFormat('en-UK', {
-          dateStyle: 'full',
-          timeStyle: 'short',
-          timeZone: 'America/New_York',
-        }).format(todaysDate);
-      document.getElementById("date").innerHTML = "Last login: " + currentDate + " on ttys000";
-
-      // Gather Width & Height of .container:
-      // INSPO from: https://www.geeksforgeeks.org/how-to-get-the-elements-actual-width-and-height-in-javascript/
-      const container = document.getElementById("container"); 
-      const widthHeight = document.getElementById("widthHeight"); 
-          
-      widthHeight.innerHTML = container.offsetWidth + "x" + container.offsetHeight;
-   
-      // Gathering type of computer
-      // Inspo from: https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/platform
-      const code = navigator.platform;
-      const user = document.getElementById("user").innerHTML = "newUser@" + code + " ~ % &block;";
-
-
-    </script>
+    <script src="main.js"></script>
 
   </body>
 </html>
