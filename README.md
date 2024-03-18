@@ -1,6 +1,6 @@
-# Personal Website V4
+# Personal Website V5
 My little corner of the internet / digital portfolio
-###### Created Fall 2022
+###### Created Fall 2024
 
 <hr>
 
@@ -19,7 +19,29 @@ More information about me can be found at these web locations:
 <hr>
 
 <details>
-<summary>Page Insights</summary>
+  <summary>Upcoming Updates:</summary>
+  <br/>
+  <div>
+    <ul>
+      <li>About</li>
+        - whoami
+      <li>Blog</li>
+        - View my tailored thoughts
+      <li>Resume</li>
+        - My updated CV
+      <li>Notes</li>
+        - My notes on school/learning/...
+      <li>Favorites</li>
+        - Websites, books, you name it...
+      <li>Help</li>
+        - If you need it, just ask
+    </ul>
+  </div>
+</details>
+
+
+<details>
+<summary>Page Insights [NOT UPDATED]:</summary>
 <br/>
   <div align="center">
     <p>Scored 99% on Google <a href="https://pagespeed.web.dev">Pagespeed Insights</a>!</p>

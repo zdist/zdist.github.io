@@ -1,372 +1,156 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Space+Grotesk&family=Space+Mono&display=swap');
+:root { 
     /*  Fonts */
     --SpaceGrotesk: 'Space Grotesk', sans-serif;
     --SpaceMono: 'Space Mono', monospace;
     /*  Colors */
-    --background-color: #f9f9f9;
+    --background-color: #1a1a1a;
     --gray: #565656;
-    --font-color: #1a1a1a;
+    --font-color: #f9f9f9;
+    --transparent: rgba(26, 26, 26, 0.8);
+    --orange: #cb8f77;
+    --yellow: #d7ba7d;
+    --greenlight: #b3cba6;
+    --greenDark: #6b9755;
+    --blueLight: rgba(120, 169, 194, 0.5);
+    --blueDark: #369ff7;
+    --purple: rgba(166, 115, 161, 0.5);
 }
-  
-/* If user prefers a dark appearance [play w/this later] */
-/* @media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: #1a1a1a;
-        --gray: #565656;
-        --font-color: #f9f9f9;
-    }
-} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 ::selection {
-    background: var(--gray);
-    color: var(--background-color);
+    background: var(--greenlight);
+    /* color: var(--font-color); */
 }
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
-    width: 10px; /* has 2b 10 for usability. 6 for aesthetic */
+    width: 10px; 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: transparent;
-    /* box-shadow: inset 0 0 2px var(--gray); */
+    background-color: var(--transparent);
     border: none;
-    /* border: 1px solid var(--background-color); */
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
-    background: var(--font-color);
-}
+/* ::-webkit-scrollbar-thumb {
+    background: var(--gray);
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: var(--gray); 
-}
-/* == Website Portion Start == */
-* {
-    box-sizing: border-box;
-    background-color: var(--background-color);
-} 
-html {
-    scroll-behavior: smooth;
-}
+/* ::-webkit-scrollbar-thumb:hover {
+    background: var(--transparent); 
+} */
 body {
-    font-family: var(--SpaceMono);
+    font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
+    /* BACKGROUND IMAGE FROM: https://unsplash.com/photos/island-painting-nbneQlI2M1A */
+    background: url(https://images.unsplash.com/photo-1578301977886-43be7b983104?q=80&w=1523&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
     background-color: var(--background-color);
-    padding: 10px !important;
-    line-height: 1.5 !important;
-    
-}
-
-/* A is for the way you ... */
-a {
     color: var(--font-color);
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    max-height: 300px;
 }
-a:hover {
-    text-decoration: none;
-}
-/* Nav Bar > Marz Barz  (w/ dropdown menu) */
-ul {
-    list-style-type: none;
+#container {
+    position: absolute;
+    border: 1px solid var(--gray);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    border-radius: 10px;
+    max-width: 800px;
+    top: 10px;
     margin: 10px;
-    padding: 10px;
 }
-li {
-    display: inline-block;
-}
-li a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: underline;
+header {
+    padding: 10px 40px;
+    background-color: var(--gray);
+    width: 100%;
+    border-radius: 6px 6px 0 0;
 }
 hr {
-    border: 2px solid var(--font-color) !important;
-    margin: 2px 0 !important;
-    clear: right !important;
-    border-radius: 2px !important;
+    border: 1px solid var(--gray);
 }
-.w3-top {
-    font-family: var(--SpaceGrotesk);
-    font-weight: 400;
-    color: var(--font-color);
-    /* Added Navbar Background Color */
-    background-color: var(--background-color);
-}
-.w3-top:hover {
-    text-decoration: underline !important;
-}
-.w3-button, .w3-bar-item {
-    text-decoration: none;
-    border-bottom: 6px solid transparent;
-    transition: all 0.4s ease;
-}
-.w3-button:hover, .w3-bar-item:hover {
-    background-color: var(--background-color) !important;
-    /*text-decoration: underline !important;*/
-    border-bottom: 4px solid var(--font-color);
-}
-#about, #bio, #experience {
-    padding-left: 200px; 
-    padding-right: 200px; 
-}
-#life {
-    padding-left: 3.4em;
-    text-indent: -3.4em;
-    word-wrap: break-word;
-}
-span {
-    font-family: var(--SpaceGrotesk) !important;
-    font-weight: 400;
-    font-size: 16px;
-    margin-right: 1em;
+.content {
+    padding: 20px;
+    background-color: var(--transparent);
+    border-radius: 0 0 7px 7px;
 }
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
-span > .blink {
+.blink {
     font-style: normal;
-    animation: blinker 1.5s linear infinite;
+    animation: blinker 1s steps(1) infinite;
 }
 @keyframes blinker {
     50% {
         opacity: 0;
     }
 }
-/* == Links Start == */
-.links {
-    font-size: 16px;
+button {
+    background: none;
+	color: inherit;
+	border: none;
+    padding: .2em;
+	font: inherit;
+	cursor: pointer;
+}
+.link {
     text-decoration: none;
     color: var(--font-color);
-    border: solid 2px var(--font-color);
-    background-color: var(--background-color);
-    padding: 5px;
-    border-radius: 4px;
-    margin: 10px;
 }
-.links:hover {
-    text-decoration: none;
-    box-shadow: 5px 5px var(--font-color);
-    transition-duration: 0.4s;
-    color: var(--font-color);
-    background-color: var(--background-color);
+.link:hover {
+    background-color: var(--purple);
 }
-.linx {
-    font-family: var(--SpaceMono) !important;
-    text-align: center;
+blockquote {
+    padding-left: 2.4em;
+    text-indent: -2.4em;
+    word-wrap: break-word;
 }
-/* == Links End == */
-
-/* Stop! Header Time! */
-.header, .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    /* background-image: var(--sippy); */
-    background-size: cover; 
+.orange {
+    color: var(--orange);
 }
-.header {
-    font-family: var(--SpaceGrotesk);
-    /* There has to be a better way to do this: */
-    /* margin-top: -40px; */
+.yellow {
+    color: var(--yellow);
 }
-.header > h2 { /* 'Zo DiSanto' */
-    font-size: 4rem;
+.greenLight {
+    color: var(--greenlight);
 }
-.header > p { /* 'Your friendly neighborhood Web Developer' */
-    font-family: var(--SpaceMono) !important;
-    font-size: 2rem;
-    font-style: italic;
-    color: var(--gray);
-    line-height: 30px;
+.greenDark {
+    color: var(--greenDark);
 }
-p, blockquote {
-    font-family: var(--SpaceMono) !important;
-    font-size: 16px;
+.blueLight {
+    color: var(--blueLight);
 }
-
-/* Tabbed Folder Insperation from: https://codepen.io/DoddBless/pen/QOZJMa */
-#content {
-/*     max-width: 90%; */
-/*     min-height: 600px; */
-  margin: 30px;
-}
-/* .tab-container {
-    position: relative;
-    margin: 20px auto;
-} */
-ul.tabs {
-    display: flex;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-ul.tabs a {
-    display: inline-block;
-    background: var(--background-color);
-    color: var(--gray);
-    cursor: pointer;
-    margin: 0;
-    padding: 5px 25px 5px 15px;
-    border: 2px solid var(--font-color);
-    border-radius: 6px 6px 0 0;
-}
-.tab-content {
-/*     position: relative; */
-/*     width: 100%;
-    height: 100%; */
-    border: 2px solid var(--font-color);
-    border-radius: 0 6px 6px 6px;
-}
-.tabs-content > div:not(:first-child) {
-    display: none;
-}
-.tab-content > div {
-    padding: 10px;
-/*     text-align: left; */
-/*     min-height: 200px; */
-    background: var(--background-color);
-}
-ul.tabs a.active {
-    background: var(--background-color);
-    color: var(--font-color);
-}
-/* End of Insperation */
-
-/* The grid container */
-.container {
-    display: grid;
-    grid-template-areas: 
-        'header header header header header header' 
-        'left left middle middle right right' 
-        'footer footer footer footer footer footer';
-    grid-column-gap: 10px; 
-    grid-row-gap: 10px; 
-    margin: 0 20px 0 20px;
-} 
-.undline, .undline:hover {
+.blueDark {
+    color: var(--blueDark);
     text-decoration: underline;
-    background-color: none;
+    line-height: 1em;
 }
-/* == It's Button Time! ==*/
-.button-container {
-    display: flex;
-    justify-content: center;
+.purple {
+    color: var(--purple);
 }
-.button {
-    display: inline-block;
-    margin: 10px;
-    padding: 8px 16px;
-    background-color: var(--font-color);
-    color: var(--background-color);
-    text-decoration: none;
-    border-radius: 4px;
-    border: 2px solid var(--font-color);
-    transition: background-color 0.3s ease;
-}
-.button:hover {
-    background-color: var(--background-color);
+.cursor {
     color: var(--font-color);
-    border: 2px solid var(--font-color);
 }
-/* == Button Time has ended :( ==*/
-.lColum, .mColum, .rColum {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    padding: 10px;
-    border: 2px solid var(--font-color); 
-    border-radius: 10px;    
-    /* Black n White Filter */
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    filter: grayscale(100%);
-    filter: gray; /* IE 6-9 */
-    transition-timing-function: linear;
-}
-.lColum:hover, .mColum:hover, .rColum:hover {
-    /* Shadow */
-    box-shadow: 5px 5px var(--font-color);
-    /* Change to color on hover */
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    filter: none;
-    transition: 0.4s;
-}
-/* Style the left column */
-.lColum {
-    grid-area: left;
-}
-/* Style the middle column */
-.mColum {
-    grid-area: middle;
-}
-/* Style the right column */
-.rColum {
-    grid-area: right;
-}
-/* In the Name of Images */
-.img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 300px;
-    border-radius: 10px;
-}
-.computer {
-    width: 390px;
-    height: 250px;
-}
-.subtext {
-    font-size: small;
-}
-/* End of grid container */
-
-/* Style the footer */
-#footer {
-    grid-area: footer;
-    padding: 10px;
+.title {
     text-align: center;
-    border-radius: 10px;
 }
-/* == Website Portion End == */
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 1300px) {
-    #about, #experience {
-        padding-right: 25px;
-        padding-left: 25px;
+@media only screen and (max-width: 800px) {
+    #container {
+        margin: 0 20px;
     }
-    li a {
-        font-size: 16px;
-        display: inline-block;
-        padding: 0px 0px;
-        text-decoration: none;
-    }
-    .container  {
-        grid-template-areas: 
-            'header header header header header header' 
-            'left left left left left left' 
-            'middle middle middle middle middle middle' 
-            'right right right right right right' 
-            'footer footer footer footer footer footer';
-    }
-    .lColum, .mColum, .rColum { 
-        /* In mobile view - no transition */
-        -webkit-filter: grayscale(0%);
-        -moz-filter: grayscale(0%);
-        -ms-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
-    .lColum:hover, .mColum:hover, .rColum:hover {
-        /* Shadow */
-        box-shadow: 5px 5px var(--font-color);
-        transition-duration: 0.4s;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #1a1a1a;
+        /* SVG FROM: https://heropatterns.com */
+        background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23565656' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        background-repeat: repeat;
     }
 }

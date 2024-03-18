@@ -1,181 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> 
-        <title>Zo DiSanto</title> 
-        <meta charset="UTF-8">
-        <meta name="author" content="Zo DiSanto"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Zo DiSanto's personal website.">
-        <!-- Favicon grabbed from zdisanto (my) GitHub Profile Photo -->
-        <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/70993217?s=400&amp;u=c252d82e2c57cd011fcbf8a6a89729fcbc9d9026&amp;v=4">
-        <!-- Fa Fa-stuff: -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- w3schools Stuff (used for Navbar) -->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
-        <!-- My Stylesheet -->
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top">
-            <div class="w3-bar w3-wide w3-padding ">
-            <a href="#home" class="w3-bar-item w3-button">Zo DiSanto</a>
-            <!-- Float links to the right & hide them on small screens -->
-                <div class="w3-right w3-hide-small">
-                    <a href="#about" class="w3-bar-item w3-button">About</a>
-                    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                    <a href="#experience" class="w3-bar-item w3-button">Experience</a>
-                    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-                    <a target="_blank" href="https://drive.google.com/file/d/1DaBlgusIVCCLmuufLEkaZMMxP68IEWrn/view?usp=sharing" class="w3-bar-item w3-button">Resume</a> 
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zo DiSanto | Brrrr...</title>
+    <!-- Styles Font Awesome: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- My Styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div id="container">
+      <header>
+        <div class="info">
+          <p class="title"><i class="fa fa-folder" aria-hidden="true"></i> ZoDiSanto &mdash; &ndash; zsh &mdash; <span id="widthHeight"></span></p>
         </div>
+      </header><hr>
 
-        <header class="header" id="home">
-            <h2 style="text-align: center; padding-top: 60px;">Zo DiSanto</h2>
-            <p>Your friendly neighborhood Web Developer</p>
-        </header>
+      <div class="content">
 
-        <section class="about" id="about">
-            <h2 style="text-align: center; padding-top: 60px;">#about</h2>
-            <div class="life"> 
-                <span>Past</span>
-                <blockquote>I hold a bachelor's degree in Information Science and a master's degree in Computer Science. I have spent two years as a Teaching Assistant, gaining experience in <span style="font-weight:bold;">HTML, CSS, JavaScript, Bootstrap, Ionic, and React.</span></blockquote>
-            </div>
-            <div class="life"> 
-                <span>Present <span class="blink">&laquo;</span></span>
-                <blockquote>I am a front-end web developer with 2+ years of professional experience at Seidenberg Creative Labs. My current skillset has grown to include designing and creating websites using tools such as <span style="font-weight:bold;">Figma, Photoshop, and WordPress.</span></blockquote> 
-            </div>
-            <div class="life"> 
-                <span>Future</span>
-                <blockquote>I intend to expand my skill set by learning various technologies. Some of these include <span style="font-weight:bold;">Tailwind, Express JS, Node JS, and MongoDB.</span></blockquote>
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <h2 style="text-align: center; padding-top: 60px;">#projects</h2>
-            <p class="subtext" style="text-align: center;">Below are a handful of my most recent projects...</p>
-
-            <div class="container">
-                <div class="lColum card-border">
-                    <img class="img" src="media/DM-Mockup.png" alt="Device Motion class project.">
-                    <p style="text-align: center;">Device Motion</p>
-                    <p class="subtext" style="text-align: center;">HTML | CSS | JavaScript</p>
-                    <blockquote>An interpretation of Op Art by Bridget Riley comes to life on <i>mobile devices</i> by using Device Motion.</blockquote>
-                    <div class="button-container">
-                        <a class="button" target="_blank" href="https://zdisanto.github.io/DeviceMotion/">Live Demo</a>
-                        <a class="button" target="_blank" href="https://github.com/zdisanto/DeviceMotion">Source Code</a>
-                        <a class="button" target="_blank" href="https://github.com/zdisanto/DeviceMotion#device-motion-in-motion">Video</a>
-                    </div>
-                </div>
-                <div class="mColum card-border">
-                    <img class="img" src="media/HI-Mockup.png" alt="A progressive website 'Hike It'.">
-                    <p style="text-align: center;">Hike It</p>
-                     <p class="subtext" style="text-align: center;"> HTML | CSS | JavaScript | Ionic | React.js</p>
-                    <!-- <p class="subtext" style="text-align: center;"> HTML | CSS | JavaScript | Ionic Framework | React.js</p> -->
-                    <!-- <blockquote>A mobile web application designed to help outdoor enthusiasts discover and explore National Parks in the United States.</blockquote> -->
-                    <blockquote>A progressive web application designed to help users discover and explore National Parks in the United States.</blockquote>
-                    <div class="button-container">
-                        <a class="button" target="_blank" href="https://homework11-zd11.web.app">Live Demo</a>
-                        <a class="button" target="_blank" href="https://github.com/zdisanto/Hike-It">Source Code</a>
-                        <a class="button" target="_blank" href="https://github.com/zdisanto/Hike-It#hike-it">Video</a>
-                    </div>
-                </div>  
-                <div class="rColum card-border">
-                    <img class="img computer" src="media/TCC-Mockup.png" alt="An application screen." width="400px">
-                    <p style="text-align: center;">Central Telecable</p>
-                    <p class="subtext" style="text-align: center;">Figma</p>
-                    <blockquote>A wireframe designed for a telecable company in Dominican Republic.</blockquote>
-                    <div class="button-container">
-                        <!-- <a class="button" target="_blank" href="">Live Demo</a> -->
-                        <!-- <a class="button" target="_blank" href="">Source Code</a> -->
-                        <a class="button" target="_blank" href="media/TCC.pdf">View</a>
-                    </div>
-                </div> 
-            </div>
-
-            <div class="container">
-                <div class="lColum card-border">
-                    <img class="img" src="media/IconsUpdated.png" alt="Icons I created for the SCL website.">
-                    <p style="text-align: center;">Icons</p>
-                    <p class="subtext" style="text-align: center;">Figma</p>
-                    <blockquote>Icons designed to decorate SCL's website.</blockquote>
-                    <div class="button-container">
-                        <a class="button" target="_blank" href="media/IconsUpdated.png">View</a>
-                    </div>
-                </div>
-                <div class="mColum card-border">
-                    <img class="img" src="media/GT-Mockup.png" alt="A wireframe for 'Green Takeout'.">
-                    <p style="text-align: center;">Green Takeout</p>
-                    <p class="subtext" style="text-align: center;">Figma</p>
-                    <blockquote>An interactive wireframe for a concept food delivery application.</blockquote>
-                    <div class="button-container">
-                        <a class="button" target="_blank" href="https://www.figma.com/proto/XbrbEkR5eDX5Ioq4Yn8sOB/GreenTakeout?node-id=47%3A235&scaling=scale-down&page-id=0%3A1&starting-point-node-id=47%3A235">View</a>
-                    </div>
-                </div>  
-                <div class="rColum card-border">
-                    <img class="img computer" src="media/MM-Mockup.png"  alt="A wireframe of the Members Management view on the SCL website." width="400px">
-                    <p style="text-align: center;">Members Management System</p>
-                    <p class="subtext" style="text-align: center;">Draw.io</p>
-                    <blockquote>A wireframe developed for the Members Management System on the SCL website.</blockquote>
-                    <div class="button-container">
-                        <a class="button" target="_blank" href="media/SCL_Website_Wireframe.pdf">View</a>
-                    </div>
-                </div> 
+        <section class="details">
+            <p><span class="greenDark" id="date"></span></p>
+            <p>&emsp;Don't type one of the following commands:
+              <br />&emsp;&emsp;&emsp;
+              <button onclick="about()" class="link blueDark">about</button>&emsp;&emsp;&emsp;&emsp;
+              <button onclick="notes()" class="link blueDark">notes</button><br />&emsp;&emsp;&emsp;
+              <button onclick="blog()" class="link blueDark">blog</button>&emsp;&emsp;&emsp;&emsp;&emsp;
+              <button onclick="favorites()" class="link blueDark">favorites</button><br />&emsp;&emsp;&emsp;
+              <button onclick="resume()" class="link blueDark">résumé</button>&emsp;&emsp;&emsp; 
+              <button onclick="help()" class="link blueDark">help</button><br />
+            </p>
+            <div class="item">
+              <p id="more"></p>
+              <p class="greenDark"><span id="user"></span></p>
             </div>
         </section>
 
-        <section class="experience" id="experience">
-            <br><br>
-            <h2 style="text-align: center;">#experience</h2>
+      </div>
 
-            <span>Seidenberg Creative Labs (<a class="undline" href="https://www.seidenbergcreativelabs.com/">SCL</a>)</span>
-            <p><i>Administrative Software Developer</i></p>
-            <blockquote>&#x2022;  A student-led organization at Pace University, where I gained valuable experience in front-end web development and worked alongside a team of developers to ensure the timely completion of projects.</blockquote>
-            
-            <span>Revolution Art</span>
-            <p><i>Project Manager (Capstone Project)</i></p>
-            <blockquote>&#x2022; I managed a team that developed an online art marketplace. We used project management techniques to create a smooth and seamless experience for clients and galleries to connect with each other.</blockquote>
-            
-            <span>Pace University & SUNY Oswego</span>
-            <p><i>Teaching Assistant</i></p>
-            <blockquote>&#x2022; As a teaching assistant, I supported professors across multiple classes. I guided students in subjects like Mobile Web Content and Development, Database Management Systems, Programming Through Mobile App Development, and Introduction to Programming and Programming Languages.</blockquote>
+    </div>
 
-            <span>TagAlong (<a class="undline" href="https://www.figma.com/proto/8etohyl6RPkw8MiZHY3sy4/Sunflower-Hackathon?node-id=24%3A2043&scaling=min-zoom&page-id=24%3A1929&starting-point-node-id=24%3A2043">View</a>)</span>
-            <p><i>UI/UX Designer (Hackathon)</i></p>
-            <blockquote>&#x2022; I collaborated with a group of four to develop an app that connects people in New York City who share similar event interests. Our focus was on creating user-friendly interfaces and improving the overall user experience.</blockquote>
-            <br>
-            <p class="subtext">If you'd like to know more about my professional experience and projects, please take a look at the Resume section. You can also check out my LinkedIn profile, which showcases my complete experience and qualifications. 
-                <br>If you have any questions, feel free to reach out to me via email. I'd be more than happy to help!</p>
-        </section>
+    <script src="main.js"></script>
 
-        <section class="contact" id="contact" style="text-align: center;">
-            <h2 style="padding-top: 60px;">#contact</h2>
-            <p class="subtext">Want to find me elsewhere on the internet?</p>
-            <div>
-                <a class="links fa fa-envelope" target="_blank" rel="nofollow noopener" href="mailto:zodisanto14@gmail.com"> <span class="linx"> Shoot me an Email</span></a>
-                <a class="links fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/zdisanto/"> <span class="linx"> Connect on LinkedIn</span></a>
-                <a class="links fa fa-github" target="_blank" href="https://github.com/zdisanto"> <span class="linx"> Visit my GitHub</span></a>
-            </div>
-            <div>
-                <img src="https://avatars.githubusercontent.com/u/70993217?v=4" alt="An image of me" style="width: 30%;">
-            </div>
-        </div>
-
-        <footer id="footer">
-            <p class="subtext">&copy; <b id="date" style="font-weight: 400;"></b> &bull; Designed and coded by Zo DiSanto</p>
-            <!-- <p class="subtext">Last Edited: 26 Spetember 2023 &bull; Designed and coded by Zo DiSanto</p> -->
-        </footer>
-
-        <script>
-            const todaysDate = new Date();
-            let currentYear = todaysDate.getFullYear();
-            document.getElementById("date").innerHTML = currentYear;
-        </script>
-
-    </body>
+  </body>
 </html>
