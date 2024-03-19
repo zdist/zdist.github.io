@@ -23,7 +23,6 @@
 }
 ::selection {
     background: var(--greenLight);
-    /* color: var(--font-color); */
 }
 /* == Scrollbar Styling == */
 /* width */
@@ -31,13 +30,6 @@
     width: 10px; 
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    /* background-color: var(--background-color);
-    border: none;
-    border-radius: 0, 0, 10px, 0; */
-
-}
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -45,10 +37,6 @@
     border-radius: 15px;
 }
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-    background: var(--greenDark); 
-} */
 body {
     font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
     /* BACKGROUND IMAGE FROM: https://unsplash.com/photos/island-painting-nbneQlI2M1A */
