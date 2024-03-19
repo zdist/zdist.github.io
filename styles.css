@@ -10,7 +10,7 @@
     --transparent: rgba(26, 26, 26, 0.8);
     --orange: #cb8f77;
     --yellow: #d7ba7d;
-    --greenlight: #b3cba6;
+    --greenLight: #b3cba6;
     --greenDark: #6b9755;
     --blueLight: rgba(120, 169, 194, 0.5);
     --blueDark: #369ff7;
@@ -22,19 +22,33 @@
     box-sizing: border-box;
 }
 ::selection {
-    background: var(--greenlight);
+    background: var(--greenLight);
+    /* color: var(--font-color); */
 }
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
     width: 10px; 
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* background-color: var(--background-color);
+    border: none;
+    border-radius: 0, 0, 10px, 0; */
+
+}
+ 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--blueLight);
     border-radius: 15px;
 }
 
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: var(--greenDark); 
+} */
 body {
     font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
     /* BACKGROUND IMAGE FROM: https://unsplash.com/photos/island-painting-nbneQlI2M1A */
@@ -110,7 +124,7 @@ blockquote {
     color: var(--yellow);
 }
 .greenLight {
-    color: var(--greenlight);
+    color: var(--greenLight);
 }
 .greenDark {
     color: var(--greenDark);
