@@ -23,40 +23,30 @@
 }
 ::selection {
     background: var(--greenlight);
-    /* color: var(--font-color); */
 }
 /* == Scrollbar Styling == */
 /* width */
 ::-webkit-scrollbar {
     width: 10px; 
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-    background-color: var(--transparent);
-    border: none;
-}
- 
 /* Handle */
-/* ::-webkit-scrollbar-thumb {
-    background: var(--gray);
-} */
+::-webkit-scrollbar-thumb {
+    background: var(--blueLight);
+    border-radius: 15px;
+}
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-    background: var(--transparent); 
-} */
 body {
     font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
     /* BACKGROUND IMAGE FROM: https://unsplash.com/photos/island-painting-nbneQlI2M1A */
-    background: url(https://images.unsplash.com/photo-1578301977886-43be7b983104?q=80&w=1523&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
-    background-color: var(--background-color);
+    background-image: url(https://images.unsplash.com/photo-1578301977886-43be7b983104?q=80&w=1523&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
     color: var(--font-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
-    max-height: 300px;
+    overflow-y: auto;
 }
 #container {
     position: absolute;
@@ -64,8 +54,9 @@ body {
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
     font-size: 14px;
     border-radius: 10px;
-    max-width: 800px;
-    top: 10px;
+    width: 85%;
+    max-width: 1000px;
+    top: 10%;
     margin: 10px;
 }
 header {
@@ -144,13 +135,5 @@ blockquote {
 @media only screen and (max-width: 800px) {
     #container {
         margin: 0 20px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: #1a1a1a;
-        /* SVG FROM: https://heropatterns.com */
-        background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23565656' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-        background-repeat: repeat;
     }
 }
