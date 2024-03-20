@@ -81,17 +81,9 @@ hr {
     gap: 5px;
 }
 .button-grid button {
-    width: auto;
+    /* width: auto; */
     box-sizing: border-box;
     text-align: left;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    color: var(--font-color);
-    cursor: pointer;
-}
-.button-grid button:hover {
-    background-color: var(--purple);
 }
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
 .blink {
