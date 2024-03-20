@@ -108,10 +108,9 @@ button {
     text-decoration: none;
     color: var(--font-color);
 }
-.link:hover {
+.purp {
     background-color: var(--purple);
     cursor: pointer;
-
 }
 blockquote {
     padding-left: 2.4em;
