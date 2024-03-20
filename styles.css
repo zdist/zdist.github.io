@@ -81,7 +81,8 @@ hr {
     gap: 5px;
 }
 .button-grid button {
-    /* width: auto; */
+    width: auto;
+    padding-left: 0;
     box-sizing: border-box;
     text-align: left;
 }
