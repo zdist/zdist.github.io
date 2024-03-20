@@ -33,10 +33,10 @@ function about() {
         I enjoy learning about:<br />
         <blockquote>&emsp;&emsp;- <strong class="yellow">Technology: </strong>(Mobile) Web Accessibility, Digital Minimalism, Robotics, <a target="_blank" href="https://archive.org" class="link blueDark">Web Archiving</a>, Cybersecurity (Cryptography), <a target="_blank" href="https://libraryofbabel.info/" class="link blueDark">Library of Babel</a>.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Mathematics:</strong> Irrational Numbers, Golden Ratio, Fractals, Rubix Cubes.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="yellow">Natural Sciences:</strong> Botany, Ecology, Space and its exploration, Sustainability and Self-Sufficiency.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Natural Sciences:</strong> Botany, Space and its exploration, Sustainability and Self-Sufficiency.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Social Sciences:</strong> Anthropology, Archelology, Psychology, Sociology.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="yellow">Sustainability/Urbanism:</strong> Bikable and Walkable Neighborhoods (Public Transportation), Composting, Recycling, The positive impact of buying second hand and shopping locally.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="yellow">Wellness:</strong> Healthy eating, Fitness (endurance training, strength training), Reading, Maintaining mental and gut health, Stoicism.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Sustainability/Urbanism:</strong> Bikable and Walkable Neighborhoods (Public Transportation), Composting, Reduce/Reuse/Recycle</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Wellness:</strong> Maintaing physical, mental and spiritual health, Fitness (endurance training, strength training), Reading, Stoicism.</blockquote>
         <br />
         I don't use/have social media, instead I am present on these web locations:<br />
         - <a target="_blank" href="https://github.com/zdisanto" class="link blueDark">GitHub</a><br />
@@ -47,7 +47,7 @@ function about() {
 }
 function resume() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % resume <br /><p style="color:var(--font-color);">
-        <a target="_blank" href="https://drive.google.com/file/d/1DaBlgusIVCCLmuufLEkaZMMxP68IEWrn/view?usp=sharing" class="link blueDark">View my Résumé</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1DaBlgusIVCCLmuufLEkaZMMxP68IEWrn/view?usp=sharing" class="link blueDark">View my Resume</a>
     `;
 }
 function blog() {
