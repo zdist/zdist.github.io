@@ -78,10 +78,10 @@ hr {
 .button-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 5px;
 }
 .button-grid button {
-    width: 50%;
+    /* width: 50%; */
     box-sizing: border-box;
 }
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
