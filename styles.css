@@ -108,7 +108,7 @@ button {
     text-decoration: none;
     color: var(--font-color);
 }
-.purp {
+.purp:hover {
     background-color: var(--purple);
     cursor: pointer;
 }
