@@ -81,10 +81,9 @@ hr {
     gap: 5px;
 }
 .button-grid button {
-    width: 50%;
+    /* width: 50%; */
     box-sizing: border-box;
     text-align: left;
-    padding: 10px;
 }
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
 .blink {
