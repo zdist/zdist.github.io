@@ -86,6 +86,7 @@ hr {
     box-sizing: border-box;
     text-align: left;
 } */
+
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
 .blink {
     font-style: normal;
@@ -102,14 +103,15 @@ button {
 	border: none;
     padding: .2em;
 	font: inherit;
-	cursor: pointer;
 }
 .link {
     text-decoration: none;
     color: var(--font-color);
 }
 .link:hover {
-    background-color: var(--purple);
+    /* background-color: var(--purple); */
+    cursor: pointer;
+
 }
 blockquote {
     padding-left: 2.4em;
