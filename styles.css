@@ -106,7 +106,6 @@ button {
 }
 .link {
     text-decoration: none;
-    color: var(--font-color);
 }
 .link:hover {
     background-color: var(--purple);
