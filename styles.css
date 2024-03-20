@@ -75,6 +75,15 @@ hr {
     background-color: var(--transparent);
     border-radius: 0 0 7px 7px;
 }
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.button-grid button {
+    width: 100%;
+    box-sizing: border-box;
+}
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
 .blink {
     font-style: normal;

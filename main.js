@@ -31,12 +31,12 @@ function about() {
         This includes learning <a target="_blank" href="https://en.wikipedia.org/wiki/Java_(programming_language)" class="link blueDark">Java</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/TypeScript" class="link blueDark">TypeScript</a>, and <a target="_blank" href="https://en.wikipedia.org/wiki/React_(software)" class="link blueDark">React</a>, and <a target="_blank" href="https://en.wikipedia.org/wiki/C%2B%2B" class="link blueDark">C++</a>.<br />
         <br />
         I enjoy learning about:<br />
-        <blockquote>&emsp;&emsp;- <strong class="orange">Technology: </strong>(Mobile) Web Accessibility, Digital Minimalism, Robotics, <a target="_blank" href="https://archive.org" class="link blueDark">Web Archiving</a>, Cybersecurity (Cryptography), <a target="_blank" href="https://libraryofbabel.info/" class="link blueDark">Library of Babel</a>.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Technology: </strong>(Mobile) Web Accessibility, Digital Minimalism, Robotics, <a target="_blank" href="https://archive.org" class="link blueDark">Web Archiving</a>, Cybersecurity (Cryptography), <a target="_blank" href="https://libraryofbabel.info/" class="link blueDark">Library of Babel</a>.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Mathematics:</strong> Irrational Numbers, Golden Ratio, Fractals, Rubix Cubes.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="greenLight">Natural Sciences:</strong> Botany, Ecology, Space and its exploration, Sustainability and Self-Sufficiency.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="blueLight">Social Sciences:</strong> Anthropology, Archelology, Psychology, Sociology.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="blueDark">Sustainability/Urbanism:</strong> Bikable and Walkable Neighborhoods (Public Transportation), Composting, Recycling, The positive impact of buying second hand and shopping locally.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="purple">Wellness:</strong> Healthy eating, Fitness (endurance training, strength training), Reading, Maintaining mental and gut health, Stoicism.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Natural Sciences:</strong> Botany, Ecology, Space and its exploration, Sustainability and Self-Sufficiency.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Social Sciences:</strong> Anthropology, Archelology, Psychology, Sociology.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Sustainability/Urbanism:</strong> Bikable and Walkable Neighborhoods (Public Transportation), Composting, Recycling, The positive impact of buying second hand and shopping locally.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Wellness:</strong> Healthy eating, Fitness (endurance training, strength training), Reading, Maintaining mental and gut health, Stoicism.</blockquote>
         <br />
         I don't use/have social media, instead I am present on these web locations:<br />
         - <a target="_blank" href="https://github.com/zdisanto" class="link blueDark">GitHub</a><br />
