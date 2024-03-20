@@ -78,14 +78,13 @@ hr {
 .button-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5px;
+    gap: 20px;
 }
-/* .button-grid button {
+.button-grid button {
     width: auto;
-    padding-left: 0;
     box-sizing: border-box;
     text-align: left;
-} */
+}
 
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
 .blink {
@@ -109,7 +108,7 @@ button {
     color: var(--font-color);
 }
 .link:hover {
-    /* background-color: var(--purple); */
+    background-color: var(--purple);
     cursor: pointer;
 
 }
