@@ -80,12 +80,12 @@ hr {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
 }
-.button-grid button {
+/* .button-grid button {
     width: auto;
     padding-left: 0;
     box-sizing: border-box;
     text-align: left;
-}
+} */
 /* Blinking: https://www.w3docs.com/tools/editor/2777 */
 .blink {
     font-style: normal;
