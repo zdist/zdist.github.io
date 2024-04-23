@@ -36,7 +36,9 @@
     background: var(--blueLight);
     border-radius: 15px;
 }
-
+html {
+    height: 100%;
+}
 body {
     font-family: var(--SpaceMono), 'Courier New', Courier, monospace;
     /* BACKGROUND IMAGE FROM: https://unsplash.com/photos/island-painting-nbneQlI2M1A */
@@ -44,6 +46,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
+    background-position: center;
     color: var(--font-color);
     display: flex;
     justify-content: center;
