@@ -25,13 +25,13 @@ More information about me can be found at these web locations:
     <ul>
       <li>About</li>
         - whoami
-      <li>Blog</li>
+      <li>Blog [NOT UPDATED]</li>
         - View my tailored thoughts
-      <li>Resume</li>
+      <li>Resume [NOT UPDATED]</li>
         - My updated CV
-      <li>Notes</li>
+      <li>Notes [NOT UPDATED]</li>
         - My notes on school/learning/...
-      <li>Favorites</li>
+      <li>Favorites [NOT UPDATED]</li>
         - Websites, books, you name it...
       <li>Help</li>
         - If you need it, just ask
