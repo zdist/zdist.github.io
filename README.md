@@ -23,17 +23,17 @@ More information about me can be found at these web locations:
   <br/>
   <div>
     <ul>
-      <li>About</li>
+      <li>[x] About</li>
         - whoami
-      <li>Blog [NOT UPDATED]</li>
+      <li>[ ] Blog</li>
         - View my tailored thoughts
-      <li>Resume [UPDATED 🥳]</li>
+      <li>[x] Resume</li>
         - My updated CV
-      <li>Notes [NOT UPDATED]</li>
+      <li>[ ] Notes</li>
         - My notes on school/learning/...
-      <li>Favorites [NOT UPDATED]</li>
+      <li>[ ] Favorites</li>
         - Websites, books, you name it...
-      <li>Help</li>
+      <li>[ ] Help</li>
         - If you need it, just ask
     </ul>
   </div>
