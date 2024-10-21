@@ -27,7 +27,7 @@ More information about me can be found at these web locations:
         - whoami
       <li>Blog [NOT UPDATED]</li>
         - View my tailored thoughts
-      <li>Resume [NOT UPDATED]</li>
+      <li>Resume [UPDATED 🥳]</li>
         - My updated CV
       <li>Notes [NOT UPDATED]</li>
         - My notes on school/learning/...
