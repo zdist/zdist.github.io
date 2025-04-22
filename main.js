@@ -40,23 +40,23 @@ const user = document.getElementById("user").innerHTML = `<p class="greenDark">g
 // What happens when you click a link:
 function about() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % about <br /><p style="color:var(--font-color);">
-        Hello, my name is <strong class="orange">Zo DiSanto</strong>, your friendly neighborhood (web) developer.<br />
-        I hold a bachelor's degree in Information Science with a minor in Psychology and a master's degree in Computer Science with a concentration in Internet Computing.<br />
-        I have worked as a Teaching Assistant for two years, assisting with four computer science courses. Additionally, I have over three years of professional experience working as a Consultant.<br />
-        Today, I work at a consulting firm as a Technology Consultant. In this position, I have been responsible for developing and maintaining websites for various clients. My current role involves working as a Consent Management Platform Engineer.<br />
+        Hello, my name is <strong class="orange">Zo</strong>, your friendly neighborhood (web) developer.<br />
+        I hold a cople degrees one in Information Science and another in Computer Science. Needless to say, I like computers and all the wonders they are capable of.<br />
+        Over the past several years have worked as a Mentor, Teacher, Freelancer, Designer, Developer and as a Project Manager.<br />
+        Today, I work as a Technology Consultant at a consulting firm, where I have developed and maintained websites for various clients. In my current role as a Consent Management Platform Engineer and Tech Lead, I manage user consent across clients' websites and applications, ensuring compliance with privacy laws in their respective countries.<br />
         <br />
         Topics I am interested in:<br />
-        <blockquote>&emsp;&emsp;- <strong class="yellow">Technology: </strong>(Mobile) Web Accessibility, Digital Minimalism, Robotics, <a target="_blank" href="https://archive.org" class="link blueDark">Web Archiving</a>, Cybersecurity (Cryptography), <a target="_blank" href="https://libraryofbabel.info/" class="link blueDark">Library of Babel</a>.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Technology: </strong>(Mobile) Web Accessibility, Digital Minimalism, Robotics (prosthetics), <a target="_blank" href="https://archive.org" class="link blueDark">Web Archiving</a>, Cybersecurity (Cryptography), <a target="_blank" href="https://libraryofbabel.info/" class="link blueDark">Library of Babel</a>.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Mathematics:</strong> Irrational Numbers, Golden Ratio, Fractals, Rubix Cubes.</blockquote>
-        <blockquote>&emsp;&emsp;- <strong class="yellow">Natural Sciences:</strong> Botany, Space and its Exploration, Sustainability and Self-Sufficiency.</blockquote>
+        <blockquote>&emsp;&emsp;- <strong class="yellow">Natural Sciences:</strong> Botany, Space Exploration (James Webb Space Telescope), Sustainability and Self-Sufficiency.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Social Sciences:</strong> Anthropology, Archelology, Psychology, Sociology.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Sustainability/Urbanism:</strong> Bikable and Walkable Neighborhoods (Public Transportation), Composting, Reduce/Reuse/Recycle.</blockquote>
         <blockquote>&emsp;&emsp;- <strong class="yellow">Wellness:</strong> Maintaing Physical, Mental and Spiritual Health, Fitness (Endurance and Strength Training), Reading, Stoicism.</blockquote>
         <br />
         I don't use/have social media, although I am present on these web locations:<br />
-        - <a target="_blank" href="https://github.com/zdisanto" class="link blueDark">GitHub</a><br />
+        - <a target="_blank" href="https://github.com/zdist" class="link blueDark">GitHub</a><br />
         - <a target="_blank" href="mailto:zodisanto14@gmail.com" class="link blueDark">Email</a><br />
-        - <a target="_blank" href="https://zdisanto.github.io" class="link blueDark">My Personal Website</a> (you are already here)<br />
+        - <a target="_blank" href="https://zdist.github.io" class="link blueDark">My Personal Website</a> (you are already here)<br />
         - <a target="_blank" href="https://www.linkedin.com/in/zdisanto/" class="link blueDark">LinkedIn</a> </p><br />
     `;
 }
@@ -69,19 +69,19 @@ function blog() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % blog <br /><p style="color:var(--font-color);">
         <a class="link blueDark" style="cursor: not-allowed;">Visit my Blog</a>
     `;
-// https://zdisanto.github.io/blog/
+// https://zdist.github.io/blog/
 }
 function favorites() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % favorites <br /><p style="color:var(--font-color);">
         <a class="link blueDark" style="cursor: not-allowed;">View my Favorite Pages</a>
     `;
-// href="https://zdisanto.github.io/favorites/"
+// href="https://zdist.github.io/favorites/"
 }
 function notes() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % notes <br /><p style="color:var(--font-color);">
         <a class="link blueDark" style="cursor: not-allowed;">View my Notes</a>
     `;
-// https://zdisanto.github.io/notes/
+// https://zdist.github.io/notes/
 }
 function help() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % help <br /><p style="color:var(--font-color);">
