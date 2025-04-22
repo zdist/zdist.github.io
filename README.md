@@ -13,7 +13,7 @@ My little corner of the internet / digital portfolio
 **Note:** The content on this website is constantly evolving as I gain more experience, refine my preferences, and acquire new skills. Don't be surprised if you visit the site on one day and notice minor visual changes the next day. I'm always busy learning and improving! 
 
 More information about me can be found at these web locations:
-- <a href="https://github.com/zdisanto">GitHub</a>
+- <a href="https://github.com/zdist">GitHub</a>
 - <a href="https://www.linkedin.com/in/zdisanto">LinkedIn</a> 
 
 <hr>
