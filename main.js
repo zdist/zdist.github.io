@@ -41,9 +41,9 @@ const user = document.getElementById("user").innerHTML = `<p class="greenDark">g
 function about() {
     document.getElementById("more").innerHTML = `<p class="greenDark">guest@<span id="user">` + code + `</span> ~ % about <br /><p style="color:var(--font-color);">
         Hello, my name is <strong class="orange">Zo</strong>, your friendly neighborhood (web) developer.<br />
-        I hold a cople degrees one in Information Science and another in Computer Science. Needless to say, I like computers and all the wonders they are capable of.<br />
+        I hold a couple degrees in Information Science and Computer Science. Needless to say, I like computers and all the wonders they are capable of.<br />
         Over the past several years have worked as a Mentor, Teacher, Freelancer, Designer, Developer and as a Project Manager.<br />
-        Today, I work as a Technology Consultant at a consulting firm, where I have developed and maintained websites for various clients. In my current role as a Consent Management Platform Engineer and Tech Lead, I manage user consent across clients' websites and applications, ensuring compliance with privacy laws in their respective countries.<br />
+        currently, I am a Technology Consultant at a consulting firm, where I have developed and maintained websites for various clients. In my current role as a Consent Management Platform Engineer and Tech Lead, I manage user consent across clients' websites and applications, ensuring compliance with privacy laws in their respective countries.<br />
         <br />
         Topics I am interested in:<br />
         <blockquote>&emsp;&emsp;- <strong class="yellow">Technology: </strong>(Mobile) Web Accessibility, Digital Minimalism, Robotics (prosthetics), <a target="_blank" href="https://archive.org" class="link blueDark">Web Archiving</a>, Cybersecurity (Cryptography), <a target="_blank" href="https://libraryofbabel.info/" class="link blueDark">Library of Babel</a>.</blockquote>
