@@ -1,4 +1,4 @@
-# Personal Website V5
+# Personal Website v5
 My little corner of the internet / digital portfolio
 ###### Created Spring 2024
 
