@@ -30,7 +30,22 @@
     width: 10px; 
 }
 
- 
+/* Typewriter */
+#output {
+    white-space: pre-wrap; /* to preserve '\n' */
+    font-family: monospace;
+}
+#output.blinking::after {
+    content: "▌";
+    font-style: normal;
+    animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+   
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--blueLight);
@@ -142,11 +157,14 @@ blockquote {
 .purple {
     color: var(--purple);
 }
-.cursor {
+.cursor, .font {
     color: var(--font-color);
 }
 .title {
     text-align: center;
+}
+.bold {
+    font-weight: bolder;
 }
 @media only screen and (max-width: 800px) {
     #container {
