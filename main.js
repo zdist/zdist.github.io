@@ -223,8 +223,8 @@ function about() {
     - Birthday: [REDACTED]<br />
     - Location: Colorado<br />
     - Major in School: Info Sci BA & Com Sci MS<br />
-    - Nationality: Half Dominican, half Italian<br />
-    - Dream Job: Friendly Neighborhood SpiderMan (I am the happiest when I am helping people using technology in privacy/security fields)<br />
+    - Nationality: [REDACTED]<br />
+    - Dream Job: Friendly Neighborhood Spider-Man (I am the happiest when I am teaching/helping people using technology in privacy/security fields)<br />
     <br />I don't use/have social media, although I am present on these web locations:<br />
         - <a target="_blank" href="https://github.com/zdist" class="link blueDark">GitHub</a><br />
         - <a target="_blank" href="mailto:zodisanto14@gmail.com" class="link blueDark">Email</a><br />
